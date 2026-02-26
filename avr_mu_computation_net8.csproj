@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <RootNamespace>arv_mu_computation</RootNamespace>
     <AssemblyName>Модуль оценки АРВ</AssemblyName>
@@ -11,27 +11,19 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <ApplicationIcon>app.ico</ApplicationIcon>
     <LangVersion>12.0</LangVersion>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>disable</Nullable>
     <NoWarn>$(NoWarn);CS0436</NoWarn>
+    <!-- На macOS/Linux сборка только для restore; публикация exe — на Windows -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Decompiled_Src/**/*.cs" />
-    <Compile Remove="CompatNet8/**/*.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="EPPlus">
-      <HintPath>Ref\EPPlus.dll</HintPath>
-    </Reference>
-    <Reference Include="OxyPlot">
-      <HintPath>Ref\OxyPlot.dll</HintPath>
-    </Reference>
-    <Reference Include="OxyPlot.Wpf">
-      <HintPath>Ref\OxyPlot.Wpf.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="EPPlus" Version="7.5.2" />
     <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="mainwindow.baml">

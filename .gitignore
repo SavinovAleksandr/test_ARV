@@ -22,5 +22,8 @@ project.lock.json
 .DS_Store
 Thumbs.db
 
+# Self-contained publish (большой объём, собирается по необходимости)
+Publish_Standalone/
+
 # Optional: не коммитить тяжёлые/временные артефакты
 # Decompiled/Module_IL_dump.txt

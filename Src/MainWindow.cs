@@ -754,7 +754,11 @@ public class MainWindow : System.Windows.Window, IComponentConnector
 					((RangeBase)prBar).Value = 0.0;
 					Rastr rastr2 = (Rastr)Activator.CreateInstance(Marshal.GetTypeFromCLSID(new Guid("EFC5E4AD-A3DD-11D3-B73F-00500454CF3F")));
 					string text2 = $"{Environment.GetFolderPath(Environment.SpecialFolder.Personal)}\\RastrWin3\\SHABLON\\динамика.rst";
+#if NET8_0_OR_GREATER
+					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.Font.SetFromFont("Times New Roman", 10f, false, false, false, false);
+#else
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.Font.SetFromFont(new System.Drawing.Font("Times New Roman", 10f));
+#endif
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.WrapText = true;
@@ -1108,7 +1112,11 @@ public class MainWindow : System.Windows.Window, IComponentConnector
 				foreach (grfData item3 in list)
 				{
 					ExcelWorksheet excelWorksheet = excelPackage.Workbook.Worksheets.Add($"{item3.name}");
+					#if NET8_0_OR_GREATER
+					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.Font.SetFromFont("Times New Roman", 10f, false, false, false, false);
+#else
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.Font.SetFromFont(new System.Drawing.Font("Times New Roman", 10f));
+#endif
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
 					excelWorksheet.Cells[$"A{1}:XFD{1048576}"].Style.WrapText = false;
@@ -1352,21 +1360,23 @@ public class MainWindow : System.Windows.Window, IComponentConnector
 		double absoluteMaximum = Math.Max(psson.Where([SpecialName] (datevalue x) => x.t > num6).Max([SpecialName] (datevalue x) => x.v), pssoff.Where([SpecialName] (datevalue x) => x.t > num6).Max([SpecialName] (datevalue x) => x.v));
 		PlotModel plotModel = new PlotModel
 		{
-			LegendPosition = LegendPosition.BottomCenter,
-			LegendPlacement = LegendPlacement.Outside,
-			LegendBackground = OxyColors.White,
-			LegendBorder = OxyColors.Black,
 			Title = name,
 			TitleFontSize = 24.0,
 			TitleHorizontalAlignment = TitleHorizontalAlignment.CenteredWithinPlotArea
 		};
-		PlotModel plotModel2 = new PlotModel
-		{
-			LegendPosition = LegendPosition.BottomCenter,
-			LegendPlacement = LegendPlacement.Outside,
-			LegendBackground = OxyColors.White,
-			LegendBorder = OxyColors.Black
-		};
+#if !NET8_0_OR_GREATER
+		plotModel.LegendPosition = LegendPosition.BottomCenter;
+		plotModel.LegendPlacement = LegendPlacement.Outside;
+		plotModel.LegendBackground = OxyColors.White;
+		plotModel.LegendBorder = OxyColors.Black;
+#endif
+		PlotModel plotModel2 = new PlotModel();
+#if !NET8_0_OR_GREATER
+		plotModel2.LegendPosition = LegendPosition.BottomCenter;
+		plotModel2.LegendPlacement = LegendPlacement.Outside;
+		plotModel2.LegendBackground = OxyColors.White;
+		plotModel2.LegendBorder = OxyColors.Black;
+#endif
 		plotModel.Axes.Add(new OxyPlot.Axes.LinearAxis
 		{
 			Position = AxisPosition.Bottom,
@@ -1441,6 +1451,11 @@ public class MainWindow : System.Windows.Window, IComponentConnector
 			DataFieldX = "t",
 			DataFieldY = "v"
 		});
+#if NET8_0_OR_GREATER
+		PngExporter pngExporterNet8 = new PngExporter { Width = 1200, Height = 800 };
+		BitmapSource val = pngExporterNet8.ExportToBitmap(plotModel);
+		BitmapSource val2 = pngExporterNet8.ExportToBitmap(plotModel2);
+#else
 		PngExporter pngExporter = new PngExporter
 		{
 			Width = 1200,
@@ -1449,6 +1464,7 @@ public class MainWindow : System.Windows.Window, IComponentConnector
 		};
 		BitmapSource val = pngExporter.ExportToBitmap(plotModel);
 		BitmapSource val2 = pngExporter.ExportToBitmap(plotModel2);
+#endif
 		BitmapFrame val3 = BitmapFrame.Create(val);
 		BitmapFrame val4 = BitmapFrame.Create(val2);
 		DrawingVisual val5 = new DrawingVisual();
