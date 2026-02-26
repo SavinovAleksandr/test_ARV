@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Модуль оценки АРВ</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net472</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="mainwindow.baml" />
+    <None Remove="utilitiessystemmonitoricon.ico" />
+    <None Remove="arv_mu_computation.EPPlus.dll" />
+    <None Remove="arv_mu_computation.OxyPlot.dll" />
+    <None Remove="arv_mu_computation.OxyPlot.Wpf.dll" />
+    <EmbeddedResource Include="mainwindow.baml" LogicalName="mainwindow.baml" />
+    <EmbeddedResource Include="utilitiessystemmonitoricon.ico" LogicalName="utilitiessystemmonitoricon.ico" />
+    <EmbeddedResource Include="arv_mu_computation.EPPlus.dll" LogicalName="arv_mu_computation.EPPlus.dll" />
+    <EmbeddedResource Include="arv_mu_computation.OxyPlot.dll" LogicalName="arv_mu_computation.OxyPlot.dll" />
+    <EmbeddedResource Include="arv_mu_computation.OxyPlot.Wpf.dll" LogicalName="arv_mu_computation.OxyPlot.Wpf.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="EPPlus">
+      <HintPath>../EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="OxyPlot">
+      <HintPath>../OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Wpf">
+      <HintPath>../OxyPlot.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>../../.dotnet/shared/Microsoft.NETCore.App/8.0.24/WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>../../.dotnet/shared/Microsoft.NETCore.App/8.0.24/System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

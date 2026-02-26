@@ -1,0 +1,3973 @@
+.assembly extern mscorlib
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly extern PresentationFramework
+{
+  .ver 4:0:0:0
+  .publickeytoken = (31 BF 38 56 AD 36 4E 35 ) // 1.8V.6N5
+}
+.assembly extern Microsoft.VisualBasic
+{
+  .ver 10:0:0:0
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A ) // .?_....:
+}
+.assembly extern System
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly extern EPPlus
+{
+  .ver 4:5:3:2
+  .publickeytoken = (EA 15 9F DA A7 81 59 A1 ) // ......Y.
+}
+.assembly extern System.Xaml
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly extern PresentationCore
+{
+  .ver 4:0:0:0
+  .publickeytoken = (31 BF 38 56 AD 36 4E 35 ) // 1.8V.6N5
+}
+.assembly extern OxyPlot
+{
+  .ver 2:0:0:0
+  .publickeytoken = (63 80 79 A8 F0 BD 61 E9 ) // c.y...a.
+}
+.assembly extern OxyPlot.Wpf
+{
+  .ver 2:0:0:0
+  .publickeytoken = (75 E9 52 BA 40 4C DB B0 ) // u.R.@L..
+}
+.assembly extern WindowsBase
+{
+  .ver 4:0:0:0
+  .publickeytoken = (31 BF 38 56 AD 36 4E 35 ) // 1.8V.6N5
+}
+.assembly extern System.Core
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 ) // .z\V.4..
+}
+.assembly extern System.Drawing
+{
+  .ver 4:0:0:0
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A ) // .?_....:
+}
+.assembly 'Модуль оценки АРВ'
+{
+  .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::'.ctor'(int32) =  (01 00 08 00 00 00 00 00 ) // ........
+
+  .custom instance void class [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::'.ctor'() =  (
+		01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+		63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01       ) // ceptionThrows.
+
+  .custom instance void class [mscorlib]System.Diagnostics.DebuggableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) =  (01 00 07 01 00 00 00 00 ) // ........
+
+  .custom instance void class [mscorlib]System.Reflection.AssemblyTitleAttribute::'.ctor'(string) =  (
+		01 00 12 61 76 72 5F 6D 75 5F 63 6F 6D 70 75 74   // ...avr_mu_comput
+		61 74 69 6F 6E 00 00                            ) // ation..
+
+  .custom instance void class [mscorlib]System.Reflection.AssemblyDescriptionAttribute::'.ctor'(string) =  (01 00 00 00 00 ) // .....
+
+  .custom instance void class [mscorlib]System.Reflection.AssemblyCompanyAttribute::'.ctor'(string) =  (01 00 00 00 00 ) // .....
+
+  .custom instance void class [mscorlib]System.Reflection.AssemblyProductAttribute::'.ctor'(string) =  (
+		01 00 12 61 76 72 5F 6D 75 5F 63 6F 6D 70 75 74   // ...avr_mu_comput
+		61 74 69 6F 6E 00 00                            ) // ation..
+
+  .custom instance void class [mscorlib]System.Reflection.AssemblyCopyrightAttribute::'.ctor'(string) =  (
+		01 00 12 43 6F 70 79 72 69 67 68 74 20 C2 A9 20   // ...Copyright .. 
+		20 32 30 31 39 00 00                            ) //  2019..
+
+  .custom instance void class [mscorlib]System.Reflection.AssemblyTrademarkAttribute::'.ctor'(string) =  (01 00 00 00 00 ) // .....
+
+  .custom instance void class [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute::'.ctor'(bool) =  (01 00 00 00 00 ) // .....
+
+  .custom instance void [PresentationFramework]System.Windows.ThemeInfoAttribute::.ctor(<BROKEN CLASS token_ 100000c due to Could not load file or assembly 'PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.>, <BROKEN CLASS token_ 100000c due to Could not load file or assembly 'PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.>) =  (01 00 00 00 00 00 01 00 00 00 00 00 ) // ............
+
+  .custom instance void class [mscorlib]System.Runtime.InteropServices.GuidAttribute::'.ctor'(string) =  (
+		01 00 24 36 31 62 62 63 64 31 35 2D 62 66 30 66   // ..$61bbcd15-bf0f
+		2D 34 62 64 62 2D 39 35 32 34 2D 36 32 63 36 62   // -4bdb-9524-62c6b
+		30 36 65 61 62 39 33 00 00                      ) // 06eab93..
+
+  .custom instance void class [mscorlib]System.Reflection.AssemblyFileVersionAttribute::'.ctor'(string) =  (01 00 07 31 2E 30 2E 30 2E 30 00 00 ) // ...1.0.0.0..
+
+  .custom instance void class [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::'.ctor'(string) =  (
+		01 00 1C 2E 4E 45 54 46 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+		2C 56 65 72 73 69 6F 6E 3D 76 34 2E 37 2E 32 01   // ,Version=v4.7.2.
+		00 54 0E 14 46 72 61 6D 65 77 6F 72 6B 44 69 73   // .T..FrameworkDis
+		70 6C 61 79 4E 61 6D 65 14 2E 4E 45 54 20 46 72   // playName..NET Fr
+		61 6D 65 77 6F 72 6B 20 34 2E 37 2E 32          ) // amework 4.7.2
+
+  .hash algorithm 0x00008004
+  .ver  1:0:0:0
+}
+.mresource public 'Модуль оценки АРВ.g.resources'
+{
+}
+.mresource public 'arv_mu_computation.Resources.resources'
+{
+}
+.mresource public 'arv_mu_computation.EPPlus.dll'
+{
+}
+.mresource public 'arv_mu_computation.OxyPlot.dll'
+{
+}
+.mresource public 'arv_mu_computation.OxyPlot.Wpf.dll'
+{
+}
+.module 'Модуль оценки АРВ.exe' // GUID = {33A73D14-F5A8-47DE-8E98-856E75FA1B5F}
+
+
+.namespace arv_mu_computation.My
+{
+  .class private auto ansi sealed MyProject
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute::.ctor() =  (01 00 00 00 ) // ....
+
+    .custom instance void [Microsoft.VisualBasic]Microsoft.VisualBasic.HideModuleNameAttribute::.ctor() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [System]System.CodeDom.Compiler.GeneratedCodeAttribute::'.ctor'(string, string) =  (
+		01 00 0A 4D 79 54 65 6D 70 6C 61 74 65 08 31 31   // ...MyTemplate.11
+		2E 30 2E 30 2E 30 00 00                         ) // .0.0.0..
+
+
+  .class nested assembly auto ansi sealed ThreadSafeObjectProvider`1<.ctor T>
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void class [System]System.ComponentModel.EditorBrowsableAttribute::'.ctor'(valuetype [System]System.ComponentModel.EditorBrowsableState) =  (01 00 01 00 00 00 00 00 ) // ........
+
+    .custom instance void class [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute::'.ctor'(bool) =  (01 00 00 00 00 ) // .....
+
+    .field  private static  !0 m_ThreadStaticValue
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.ThreadStaticAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+
+    // method line 236
+    .method assembly specialname 
+           instance default !T get_GetInstance ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Diagnostics.DebuggerHiddenAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x7c78
+	// Code size 38 (0x26)
+	.maxstack 2
+	.locals init (
+		!T	V_0,
+		bool	V_1)
+	IL_0000:  nop 
+	IL_0001:  ldsfld !0 class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<!0>::m_ThreadStaticValue
+	IL_0006:  box !0
+	IL_000b:  ldnull 
+	IL_000c:  ceq 
+	IL_000e:  stloc.1 
+	IL_000f:  ldloc.1 
+	IL_0010:  brfalse.s IL_001c
+
+	IL_0012:  call !!0 class [mscorlib]System.Activator::CreateInstance<!0> ()
+	IL_0017:  stsfld !0 class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<!0>::m_ThreadStaticValue
+	IL_001c:  ldsfld !0 class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<!0>::m_ThreadStaticValue
+	IL_0021:  stloc.0 
+	IL_0022:  br.s IL_0024
+
+	IL_0024:  ldloc.0 
+	IL_0025:  ret 
+    } // end of method ThreadSafeObjectProvider`1::get_GetInstance
+
+    // method line 237
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Diagnostics.DebuggerHiddenAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        .custom instance void class [System]System.ComponentModel.EditorBrowsableAttribute::'.ctor'(valuetype [System]System.ComponentModel.EditorBrowsableState) =  (01 00 01 00 00 00 00 00 ) // ........
+
+        // Method begins at RVA 0x7caa
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  call instance void object::'.ctor'()
+	IL_0007:  nop 
+	IL_0008:  ret 
+    } // end of method ThreadSafeObjectProvider`1::.ctor
+
+	.property instance !T GetInstance ()
+	{
+		.get instance default !(null) arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1::get_GetInstance () 
+	}
+  } // end of class ThreadSafeObjectProvider`1
+
+  } // end of class arv_mu_computation.My.MyProject
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi compModel
+  	extends [mscorlib]System.Object
+  	implements [System]System.ComponentModel.INotifyPropertyChanged  {
+    .field  private  string[] fls
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<string> rgms
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<string> ut2Files
+    .field  private  string schFile
+    .field  private  string scnsFile
+    .field  private  class arv_mu_computation.My.comInfo xlsFile
+    .field  private  class [System]System.ComponentModel.PropertyChangedEventHandler PropertyChangedEvent
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 1
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2050
+	// Code size 63 (0x3f)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  nop 
+	IL_0007:  ldarg.0 
+	IL_0008:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<string>::'.ctor'()
+	IL_000d:  stfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::rgms
+	IL_0012:  ldarg.0 
+	IL_0013:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<string>::'.ctor'()
+	IL_0018:  stfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::ut2Files
+	IL_001d:  ldarg.0 
+	IL_001e:  ldstr ""
+	IL_0023:  stfld string arv_mu_computation.My.compModel::schFile
+	IL_0028:  ldarg.0 
+	IL_0029:  ldstr ""
+	IL_002e:  stfld string arv_mu_computation.My.compModel::scnsFile
+	IL_0033:  ldarg.0 
+	IL_0034:  newobj instance void class arv_mu_computation.My.comInfo::'.ctor'()
+	IL_0039:  stfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_003e:  ret 
+    } // end of method compModel::.ctor
+
+    // method line 2
+    .method public specialname 
+           instance default string[] get_files ()  cil managed 
+    {
+        // Method begins at RVA 0x2090
+	// Code size 12 (0xc)
+	.maxstack 1
+	.locals init (
+		string[]	V_0)
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  ldfld string[] arv_mu_computation.My.compModel::fls
+	IL_0007:  stloc.0 
+	IL_0008:  br.s IL_000a
+
+	IL_000a:  ldloc.0 
+	IL_000b:  ret 
+    } // end of method compModel::get_files
+
+    // method line 3
+    .method public specialname 
+           instance default void set_files (string[] 'value')  cil managed 
+    {
+        // Method begins at RVA 0x20a8
+	// Code size 21 (0x15)
+	.maxstack 8
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  ldarg.1 
+	IL_0003:  stfld string[] arv_mu_computation.My.compModel::fls
+	IL_0008:  ldarg.0 
+	IL_0009:  ldstr "regims"
+	IL_000e:  call instance void class arv_mu_computation.My.compModel::NotifyPropertyChanged(string)
+	IL_0013:  nop 
+	IL_0014:  ret 
+    } // end of method compModel::set_files
+
+    // method line 4
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<string> get_regims ()  cil managed 
+    {
+        // Method begins at RVA 0x20c0
+	// Code size 269 (0x10d)
+	.maxstack 3
+	.locals init (
+		class [mscorlib]System.Collections.Generic.List`1<string>	V_0,
+		string[]	V_1,
+		int32	V_2,
+		string	V_3,
+		bool	V_4,
+		bool	V_5,
+		bool	V_6,
+		bool	V_7,
+		valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>	V_8,
+		class arv_mu_computation.My.compModel/'_Closure$__11-0'	V_9,
+		bool	V_10)
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  call instance string[] class arv_mu_computation.My.compModel::get_files()
+	IL_0007:  stloc.1 
+	IL_0008:  ldc.i4.0 
+	IL_0009:  stloc.2 
+	IL_000a:  br.s IL_004e
+
+	IL_000c:  ldloc.1 
+	IL_000d:  ldloc.2 
+	IL_000e:  ldelem.ref 
+	IL_000f:  stloc.3 
+	IL_0010:  ldloc.3 
+	IL_0011:  call string class [mscorlib]System.IO.Path::GetExtension(string)
+	IL_0016:  ldstr ".rst"
+	IL_001b:  ldc.i4.0 
+	IL_001c:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0021:  ldc.i4.0 
+	IL_0022:  ceq 
+	IL_0024:  ldarg.0 
+	IL_0025:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::rgms
+	IL_002a:  ldloc.3 
+	IL_002b:  callvirt instance bool class [mscorlib]System.Collections.Generic.List`1<string>::Contains(!0)
+	IL_0030:  ldc.i4.0 
+	IL_0031:  ceq 
+	IL_0033:  and 
+	IL_0034:  stloc.s 4
+	IL_0036:  ldloc.s 4
+	IL_0038:  brfalse.s IL_0048
+
+	IL_003a:  ldarg.0 
+	IL_003b:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::rgms
+	IL_0040:  ldloc.3 
+	IL_0041:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<string>::Add(!0)
+	IL_0046:  nop 
+	IL_0047:  nop 
+	IL_0048:  nop 
+	IL_0049:  nop 
+	IL_004a:  ldloc.2 
+	IL_004b:  ldc.i4.1 
+	IL_004c:  add.ovf 
+	IL_004d:  stloc.2 
+	IL_004e:  ldloc.2 
+	IL_004f:  ldloc.1 
+	IL_0050:  ldlen 
+	IL_0051:  conv.i4 
+	IL_0052:  clt 
+	IL_0054:  stloc.s 5
+	IL_0056:  ldloc.s 5
+	IL_0058:  brtrue.s IL_000c
+
+	IL_005a:  ldarg.0 
+	IL_005b:  call instance class arv_mu_computation.My.comInfo class arv_mu_computation.My.compModel::get_xlxs()
+	IL_0060:  callvirt instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> class arv_mu_computation.My.comInfo::get_rgms()
+	IL_0065:  ldnull 
+	IL_0066:  cgt.un 
+	IL_0068:  stloc.s 6
+	IL_006a:  ldloc.s 6
+	IL_006c:  brfalse IL_0101
+
+	IL_0071:  ldarg.0 
+	IL_0072:  call instance class arv_mu_computation.My.comInfo class arv_mu_computation.My.compModel::get_xlxs()
+	IL_0077:  callvirt instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> class arv_mu_computation.My.comInfo::get_rgms()
+	IL_007c:  callvirt instance int32 class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo>::get_Count()
+	IL_0081:  ldc.i4.0 
+	IL_0082:  cgt.un 
+	IL_0084:  stloc.s 7
+	IL_0086:  ldloc.s 7
+	IL_0088:  brfalse.s IL_00ff
+
+	.try { // 0
+	  IL_008a:  ldarg.0 
+	  IL_008b:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::rgms
+	  IL_0090:  callvirt instance valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<!0> class [mscorlib]System.Collections.Generic.List`1<string>::GetEnumerator()
+	  IL_0095:  stloc.s 8
+	  IL_0097:  br.s IL_00e0
+
+	  IL_0099:  ldloc.s 9
+	  IL_009b:  newobj instance void class arv_mu_computation.My.compModel/'_Closure$__11-0'::'.ctor'(class arv_mu_computation.My.compModel/'_Closure$__11-0')
+	  IL_00a0:  stloc.s 9
+	  IL_00a2:  ldloc.s 9
+	  IL_00a4:  ldloca.s 8
+	  IL_00a6:  call instance !0 valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>::get_Current()
+	  IL_00ab:  stfld string arv_mu_computation.My.compModel/'_Closure$__11-0'::$VB$Local_row
+	  IL_00b0:  ldarg.0 
+	  IL_00b1:  call instance class arv_mu_computation.My.comInfo class arv_mu_computation.My.compModel::get_xlxs()
+	  IL_00b6:  callvirt instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> class arv_mu_computation.My.comInfo::get_rgms()
+	  IL_00bb:  ldloc.s 9
+	  IL_00bd:  ldftn instance bool class arv_mu_computation.My.compModel/'_Closure$__11-0'::_Lambda$__0(class arv_mu_computation.My.rgmsInfo)
+	  IL_00c3:  newobj instance void class [mscorlib]System.Func`2<class arv_mu_computation.My.rgmsInfo, bool>::'.ctor'(object, native int)
+	  IL_00c8:  call class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> class [System.Core]System.Linq.Enumerable::Where<class arv_mu_computation.My.rgmsInfo> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>, class [mscorlib]System.Func`2<!!0,bool>)
+	  IL_00cd:  call !!0 class [System.Core]System.Linq.Enumerable::FirstOrDefault<class arv_mu_computation.My.rgmsInfo> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	  IL_00d2:  ldloc.s 9
+	  IL_00d4:  ldfld string arv_mu_computation.My.compModel/'_Closure$__11-0'::$VB$Local_row
+	  IL_00d9:  callvirt instance void class arv_mu_computation.My.rgmsInfo::set_sName(string)
+	  IL_00de:  nop 
+	  IL_00df:  nop 
+	  IL_00e0:  ldloca.s 8
+	  IL_00e2:  call instance bool valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>::MoveNext()
+	  IL_00e7:  stloc.s 10
+	  IL_00e9:  ldloc.s 10
+	  IL_00eb:  brtrue.s IL_0099
+
+	  IL_00ed:  leave.s IL_00fe
+
+	} // end .try 0
+	finally  { // 0
+	  IL_00ef:  ldloca.s 8
+	  IL_00f1:  constrained. valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>
+	  IL_00f7:  callvirt instance void class [mscorlib]System.IDisposable::Dispose()
+	  IL_00fc:  nop 
+	  IL_00fd:  endfinally 
+	} // end handler 0
+	IL_00fe:  nop 
+	IL_00ff:  nop 
+	IL_0100:  nop 
+	IL_0101:  nop 
+	IL_0102:  ldarg.0 
+	IL_0103:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::rgms
+	IL_0108:  stloc.0 
+	IL_0109:  br.s IL_010b
+
+	IL_010b:  ldloc.0 
+	IL_010c:  ret 
+    } // end of method compModel::get_regims
+
+    // method line 5
+    .method public specialname 
+           instance default void set_regims (class [mscorlib]System.Collections.Generic.List`1<string> 'value')  cil managed 
+    {
+        // Method begins at RVA 0x21ec
+	// Code size 14 (0xe)
+	.maxstack 8
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::rgms
+	IL_0007:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<string>::Clear()
+	IL_000c:  nop 
+	IL_000d:  ret 
+    } // end of method compModel::set_regims
+
+    // method line 6
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<string> get_ut2s ()  cil managed 
+    {
+        // Method begins at RVA 0x21fc
+	// Code size 269 (0x10d)
+	.maxstack 3
+	.locals init (
+		class [mscorlib]System.Collections.Generic.List`1<string>	V_0,
+		string[]	V_1,
+		int32	V_2,
+		string	V_3,
+		bool	V_4,
+		bool	V_5,
+		bool	V_6,
+		bool	V_7,
+		valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>	V_8,
+		class arv_mu_computation.My.compModel/'_Closure$__14-0'	V_9,
+		bool	V_10)
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  call instance string[] class arv_mu_computation.My.compModel::get_files()
+	IL_0007:  stloc.1 
+	IL_0008:  ldc.i4.0 
+	IL_0009:  stloc.2 
+	IL_000a:  br.s IL_004e
+
+	IL_000c:  ldloc.1 
+	IL_000d:  ldloc.2 
+	IL_000e:  ldelem.ref 
+	IL_000f:  stloc.3 
+	IL_0010:  ldloc.3 
+	IL_0011:  call string class [mscorlib]System.IO.Path::GetExtension(string)
+	IL_0016:  ldstr ".ut2"
+	IL_001b:  ldc.i4.0 
+	IL_001c:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0021:  ldc.i4.0 
+	IL_0022:  ceq 
+	IL_0024:  ldarg.0 
+	IL_0025:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::ut2Files
+	IL_002a:  ldloc.3 
+	IL_002b:  callvirt instance bool class [mscorlib]System.Collections.Generic.List`1<string>::Contains(!0)
+	IL_0030:  ldc.i4.0 
+	IL_0031:  ceq 
+	IL_0033:  and 
+	IL_0034:  stloc.s 4
+	IL_0036:  ldloc.s 4
+	IL_0038:  brfalse.s IL_0048
+
+	IL_003a:  ldarg.0 
+	IL_003b:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::ut2Files
+	IL_0040:  ldloc.3 
+	IL_0041:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<string>::Add(!0)
+	IL_0046:  nop 
+	IL_0047:  nop 
+	IL_0048:  nop 
+	IL_0049:  nop 
+	IL_004a:  ldloc.2 
+	IL_004b:  ldc.i4.1 
+	IL_004c:  add.ovf 
+	IL_004d:  stloc.2 
+	IL_004e:  ldloc.2 
+	IL_004f:  ldloc.1 
+	IL_0050:  ldlen 
+	IL_0051:  conv.i4 
+	IL_0052:  clt 
+	IL_0054:  stloc.s 5
+	IL_0056:  ldloc.s 5
+	IL_0058:  brtrue.s IL_000c
+
+	IL_005a:  ldarg.0 
+	IL_005b:  call instance class arv_mu_computation.My.comInfo class arv_mu_computation.My.compModel::get_xlxs()
+	IL_0060:  callvirt instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> class arv_mu_computation.My.comInfo::get_ut()
+	IL_0065:  ldnull 
+	IL_0066:  cgt.un 
+	IL_0068:  stloc.s 6
+	IL_006a:  ldloc.s 6
+	IL_006c:  brfalse IL_0101
+
+	IL_0071:  ldarg.0 
+	IL_0072:  call instance class arv_mu_computation.My.comInfo class arv_mu_computation.My.compModel::get_xlxs()
+	IL_0077:  callvirt instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> class arv_mu_computation.My.comInfo::get_ut()
+	IL_007c:  callvirt instance int32 class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo>::get_Count()
+	IL_0081:  ldc.i4.0 
+	IL_0082:  cgt.un 
+	IL_0084:  stloc.s 7
+	IL_0086:  ldloc.s 7
+	IL_0088:  brfalse.s IL_00ff
+
+	.try { // 0
+	  IL_008a:  ldarg.0 
+	  IL_008b:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::ut2Files
+	  IL_0090:  callvirt instance valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<!0> class [mscorlib]System.Collections.Generic.List`1<string>::GetEnumerator()
+	  IL_0095:  stloc.s 8
+	  IL_0097:  br.s IL_00e0
+
+	  IL_0099:  ldloc.s 9
+	  IL_009b:  newobj instance void class arv_mu_computation.My.compModel/'_Closure$__14-0'::'.ctor'(class arv_mu_computation.My.compModel/'_Closure$__14-0')
+	  IL_00a0:  stloc.s 9
+	  IL_00a2:  ldloc.s 9
+	  IL_00a4:  ldloca.s 8
+	  IL_00a6:  call instance !0 valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>::get_Current()
+	  IL_00ab:  stfld string arv_mu_computation.My.compModel/'_Closure$__14-0'::$VB$Local_row
+	  IL_00b0:  ldarg.0 
+	  IL_00b1:  call instance class arv_mu_computation.My.comInfo class arv_mu_computation.My.compModel::get_xlxs()
+	  IL_00b6:  callvirt instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> class arv_mu_computation.My.comInfo::get_ut()
+	  IL_00bb:  ldloc.s 9
+	  IL_00bd:  ldftn instance bool class arv_mu_computation.My.compModel/'_Closure$__14-0'::_Lambda$__0(class arv_mu_computation.My.utInfo)
+	  IL_00c3:  newobj instance void class [mscorlib]System.Func`2<class arv_mu_computation.My.utInfo, bool>::'.ctor'(object, native int)
+	  IL_00c8:  call class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> class [System.Core]System.Linq.Enumerable::Where<class arv_mu_computation.My.utInfo> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>, class [mscorlib]System.Func`2<!!0,bool>)
+	  IL_00cd:  call !!0 class [System.Core]System.Linq.Enumerable::FirstOrDefault<class arv_mu_computation.My.utInfo> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	  IL_00d2:  ldloc.s 9
+	  IL_00d4:  ldfld string arv_mu_computation.My.compModel/'_Closure$__14-0'::$VB$Local_row
+	  IL_00d9:  callvirt instance void class arv_mu_computation.My.utInfo::set_sName(string)
+	  IL_00de:  nop 
+	  IL_00df:  nop 
+	  IL_00e0:  ldloca.s 8
+	  IL_00e2:  call instance bool valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>::MoveNext()
+	  IL_00e7:  stloc.s 10
+	  IL_00e9:  ldloc.s 10
+	  IL_00eb:  brtrue.s IL_0099
+
+	  IL_00ed:  leave.s IL_00fe
+
+	} // end .try 0
+	finally  { // 0
+	  IL_00ef:  ldloca.s 8
+	  IL_00f1:  constrained. valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<string>
+	  IL_00f7:  callvirt instance void class [mscorlib]System.IDisposable::Dispose()
+	  IL_00fc:  nop 
+	  IL_00fd:  endfinally 
+	} // end handler 0
+	IL_00fe:  nop 
+	IL_00ff:  nop 
+	IL_0100:  nop 
+	IL_0101:  nop 
+	IL_0102:  ldarg.0 
+	IL_0103:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::ut2Files
+	IL_0108:  stloc.0 
+	IL_0109:  br.s IL_010b
+
+	IL_010b:  ldloc.0 
+	IL_010c:  ret 
+    } // end of method compModel::get_ut2s
+
+    // method line 7
+    .method public specialname 
+           instance default void set_ut2s (class [mscorlib]System.Collections.Generic.List`1<string> 'value')  cil managed 
+    {
+        // Method begins at RVA 0x2328
+	// Code size 14 (0xe)
+	.maxstack 8
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::ut2Files
+	IL_0007:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<string>::Clear()
+	IL_000c:  nop 
+	IL_000d:  ret 
+    } // end of method compModel::set_ut2s
+
+    // method line 8
+    .method public specialname 
+           instance default string get_schs ()  cil managed 
+    {
+        // Method begins at RVA 0x2338
+	// Code size 79 (0x4f)
+	.maxstack 3
+	.locals init (
+		string	V_0,
+		string[]	V_1,
+		int32	V_2,
+		string	V_3,
+		bool	V_4,
+		bool	V_5)
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  call instance string[] class arv_mu_computation.My.compModel::get_files()
+	IL_0007:  stloc.1 
+	IL_0008:  ldc.i4.0 
+	IL_0009:  stloc.2 
+	IL_000a:  br.s IL_0038
+
+	IL_000c:  ldloc.1 
+	IL_000d:  ldloc.2 
+	IL_000e:  ldelem.ref 
+	IL_000f:  stloc.3 
+	IL_0010:  ldloc.3 
+	IL_0011:  call string class [mscorlib]System.IO.Path::GetExtension(string)
+	IL_0016:  ldstr ".sch"
+	IL_001b:  ldc.i4.0 
+	IL_001c:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0021:  ldc.i4.0 
+	IL_0022:  ceq 
+	IL_0024:  stloc.s 4
+	IL_0026:  ldloc.s 4
+	IL_0028:  brfalse.s IL_0032
+
+	IL_002a:  ldarg.0 
+	IL_002b:  ldloc.3 
+	IL_002c:  stfld string arv_mu_computation.My.compModel::schFile
+	IL_0031:  nop 
+	IL_0032:  nop 
+	IL_0033:  nop 
+	IL_0034:  ldloc.2 
+	IL_0035:  ldc.i4.1 
+	IL_0036:  add.ovf 
+	IL_0037:  stloc.2 
+	IL_0038:  ldloc.2 
+	IL_0039:  ldloc.1 
+	IL_003a:  ldlen 
+	IL_003b:  conv.i4 
+	IL_003c:  clt 
+	IL_003e:  stloc.s 5
+	IL_0040:  ldloc.s 5
+	IL_0042:  brtrue.s IL_000c
+
+	IL_0044:  ldarg.0 
+	IL_0045:  ldfld string arv_mu_computation.My.compModel::schFile
+	IL_004a:  stloc.0 
+	IL_004b:  br.s IL_004d
+
+	IL_004d:  ldloc.0 
+	IL_004e:  ret 
+    } // end of method compModel::get_schs
+
+    // method line 9
+    .method public specialname 
+           instance default void set_schs (string 'value')  cil managed 
+    {
+        // Method begins at RVA 0x2393
+	// Code size 13 (0xd)
+	.maxstack 8
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  ldstr ""
+	IL_0007:  stfld string arv_mu_computation.My.compModel::schFile
+	IL_000c:  ret 
+    } // end of method compModel::set_schs
+
+    // method line 10
+    .method public specialname 
+           instance default string get_scns ()  cil managed 
+    {
+        // Method begins at RVA 0x23a4
+	// Code size 79 (0x4f)
+	.maxstack 3
+	.locals init (
+		string	V_0,
+		string[]	V_1,
+		int32	V_2,
+		string	V_3,
+		bool	V_4,
+		bool	V_5)
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  call instance string[] class arv_mu_computation.My.compModel::get_files()
+	IL_0007:  stloc.1 
+	IL_0008:  ldc.i4.0 
+	IL_0009:  stloc.2 
+	IL_000a:  br.s IL_0038
+
+	IL_000c:  ldloc.1 
+	IL_000d:  ldloc.2 
+	IL_000e:  ldelem.ref 
+	IL_000f:  stloc.3 
+	IL_0010:  ldloc.3 
+	IL_0011:  call string class [mscorlib]System.IO.Path::GetExtension(string)
+	IL_0016:  ldstr ".scn"
+	IL_001b:  ldc.i4.0 
+	IL_001c:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0021:  ldc.i4.0 
+	IL_0022:  ceq 
+	IL_0024:  stloc.s 4
+	IL_0026:  ldloc.s 4
+	IL_0028:  brfalse.s IL_0032
+
+	IL_002a:  ldarg.0 
+	IL_002b:  ldloc.3 
+	IL_002c:  stfld string arv_mu_computation.My.compModel::scnsFile
+	IL_0031:  nop 
+	IL_0032:  nop 
+	IL_0033:  nop 
+	IL_0034:  ldloc.2 
+	IL_0035:  ldc.i4.1 
+	IL_0036:  add.ovf 
+	IL_0037:  stloc.2 
+	IL_0038:  ldloc.2 
+	IL_0039:  ldloc.1 
+	IL_003a:  ldlen 
+	IL_003b:  conv.i4 
+	IL_003c:  clt 
+	IL_003e:  stloc.s 5
+	IL_0040:  ldloc.s 5
+	IL_0042:  brtrue.s IL_000c
+
+	IL_0044:  ldarg.0 
+	IL_0045:  ldfld string arv_mu_computation.My.compModel::scnsFile
+	IL_004a:  stloc.0 
+	IL_004b:  br.s IL_004d
+
+	IL_004d:  ldloc.0 
+	IL_004e:  ret 
+    } // end of method compModel::get_scns
+
+    // method line 11
+    .method public specialname 
+           instance default void set_scns (string 'value')  cil managed 
+    {
+        // Method begins at RVA 0x23ff
+	// Code size 2 (0x2)
+	.maxstack 8
+	IL_0000:  nop 
+	IL_0001:  ret 
+    } // end of method compModel::set_scns
+
+    // method line 12
+    .method public specialname 
+           instance default class arv_mu_computation.My.comInfo get_xlxs ()  cil managed 
+    {
+        // Method begins at RVA 0x2404
+	// Code size 2755 (0xac3)
+	.maxstack 6
+	.locals init (
+		class arv_mu_computation.My.comInfo	V_0,
+		string[]	V_1,
+		int32	V_2,
+		string	V_3,
+		bool	V_4,
+		class [mscorlib]System.IO.FileInfo	V_5,
+		class [EPPlus]OfficeOpenXml.ExcelPackage	V_6,
+		bool	V_7,
+		class arv_mu_computation.My.compModel/'_Closure$__23-0'	V_8,
+		class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo>	V_9,
+		class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo>	V_10,
+		class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo>	V_11,
+		class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo>	V_12,
+		class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo>	V_13,
+		class [mscorlib]System.Collections.Generic.List`1<int32>	V_14,
+		bool	V_15,
+		string	V_16,
+		string[]	V_17,
+		int32	V_18,
+		string	V_19,
+		bool	V_20,
+		class arv_mu_computation.My.rgmsInfo	V_21,
+		class [mscorlib]System.Func`2<string, bool>	V_22,
+		bool	V_23,
+		bool	V_24,
+		class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId>	V_25,
+		int32	V_26,
+		class arv_mu_computation.My.elId	V_27,
+		bool	V_28,
+		class arv_mu_computation.My.remsInfo	V_29,
+		bool	V_30,
+		class arv_mu_computation.My.utInfo	V_31,
+		bool	V_32,
+		bool	V_33,
+		string	V_34,
+		class [mscorlib]System.Collections.Generic.List`1<int32>	V_35,
+		string[]	V_36,
+		int32	V_37,
+		string	V_38,
+		bool	V_39,
+		bool	V_40,
+		bool	V_41)
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  call instance string[] class arv_mu_computation.My.compModel::get_files()
+	IL_0007:  stloc.1 
+	IL_0008:  ldc.i4.0 
+	IL_0009:  stloc.2 
+	IL_000a:  br IL_0aa9
+
+	IL_000f:  ldloc.1 
+	IL_0010:  ldloc.2 
+	IL_0011:  ldelem.ref 
+	IL_0012:  stloc.3 
+	IL_0013:  ldloc.3 
+	IL_0014:  call string class [mscorlib]System.IO.Path::GetExtension(string)
+	IL_0019:  ldstr ".xlsx"
+	IL_001e:  ldc.i4.0 
+	IL_001f:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0024:  ldc.i4.0 
+	IL_0025:  ceq 
+	IL_0027:  ldloc.3 
+	IL_0028:  call string class [mscorlib]System.IO.Path::GetExtension(string)
+	IL_002d:  ldstr ".xls"
+	IL_0032:  ldc.i4.0 
+	IL_0033:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0038:  ldc.i4.0 
+	IL_0039:  ceq 
+	IL_003b:  or 
+	IL_003c:  stloc.s 4
+	IL_003e:  ldloc.s 4
+	IL_0040:  brfalse IL_0aa3
+
+	IL_0045:  ldloc.3 
+	IL_0046:  newobj instance void class [mscorlib]System.IO.FileInfo::'.ctor'(string)
+	IL_004b:  stloc.s 5
+	IL_004d:  ldloc.s 5
+	IL_004f:  newobj instance void class [EPPlus]OfficeOpenXml.ExcelPackage::'.ctor'(class [mscorlib]System.IO.FileInfo)
+	IL_0054:  stloc.s 6
+	IL_0056:  ldloc.s 6
+	IL_0058:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_005d:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_0062:  ldstr "rgms"
+	IL_0067:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_006c:  ldnull 
+	IL_006d:  cgt.un 
+	IL_006f:  ldloc.s 6
+	IL_0071:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_0076:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_007b:  ldstr "rems"
+	IL_0080:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_0085:  ldnull 
+	IL_0086:  cgt.un 
+	IL_0088:  and 
+	IL_0089:  ldloc.s 6
+	IL_008b:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_0090:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_0095:  ldstr "ut"
+	IL_009a:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_009f:  ldnull 
+	IL_00a0:  cgt.un 
+	IL_00a2:  and 
+	IL_00a3:  ldloc.s 6
+	IL_00a5:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_00aa:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_00af:  ldstr "arv"
+	IL_00b4:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_00b9:  ldnull 
+	IL_00ba:  cgt.un 
+	IL_00bc:  and 
+	IL_00bd:  stloc.s 7
+	IL_00bf:  ldloc.s 7
+	IL_00c1:  brfalse IL_0aa1
+
+	IL_00c6:  ldloc.s 8
+	IL_00c8:  newobj instance void class arv_mu_computation.My.compModel/'_Closure$__23-0'::'.ctor'(class arv_mu_computation.My.compModel/'_Closure$__23-0')
+	IL_00cd:  stloc.s 8
+	IL_00cf:  ldloc.s 8
+	IL_00d1:  ldloc.s 6
+	IL_00d3:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_00d8:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_00dd:  ldstr "rgms"
+	IL_00e2:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_00e7:  stfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_00ec:  ldloc.s 8
+	IL_00ee:  ldc.i4.2 
+	IL_00ef:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_00f4:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo>::'.ctor'()
+	IL_00f9:  stloc.s 9
+	IL_00fb:  br IL_026a
+
+	IL_0100:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<int32>::'.ctor'()
+	IL_0105:  stloc.s 14
+	IL_0107:  ldloc.s 8
+	IL_0109:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_010e:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0113:  ldloc.s 8
+	IL_0115:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_011a:  ldc.i4.3 
+	IL_011b:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0120:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0125:  ldnull 
+	IL_0126:  cgt.un 
+	IL_0128:  stloc.s 15
+	IL_012a:  ldloc.s 15
+	IL_012c:  brfalse.s IL_019a
+
+	IL_012e:  ldloc.s 8
+	IL_0130:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0135:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_013a:  ldloc.s 8
+	IL_013c:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0141:  ldc.i4.3 
+	IL_0142:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0147:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_014c:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_0151:  stloc.s 16
+	IL_0153:  ldloc.s 16
+	IL_0155:  ldc.i4.1 
+	IL_0156:  newarr [mscorlib]System.Char
+	IL_015b:  dup 
+	IL_015c:  ldc.i4.0 
+	IL_015d:  ldc.i4.s 0x3b
+	IL_015f:  stelem.i2 
+	IL_0160:  callvirt instance string[] string::Split(char[])
+	IL_0165:  stloc.s 17
+	IL_0167:  ldc.i4.0 
+	IL_0168:  stloc.s 18
+	IL_016a:  br.s IL_0189
+
+	IL_016c:  ldloc.s 17
+	IL_016e:  ldloc.s 18
+	IL_0170:  ldelem.ref 
+	IL_0171:  stloc.s 19
+	IL_0173:  ldloc.s 14
+	IL_0175:  ldloc.s 19
+	IL_0177:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(string)
+	IL_017c:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+	IL_0181:  nop 
+	IL_0182:  nop 
+	IL_0183:  ldloc.s 18
+	IL_0185:  ldc.i4.1 
+	IL_0186:  add.ovf 
+	IL_0187:  stloc.s 18
+	IL_0189:  ldloc.s 18
+	IL_018b:  ldloc.s 17
+	IL_018d:  ldlen 
+	IL_018e:  conv.i4 
+	IL_018f:  clt 
+	IL_0191:  stloc.s 20
+	IL_0193:  ldloc.s 20
+	IL_0195:  brtrue.s IL_016c
+
+	IL_0197:  nop 
+	IL_0198:  br.s IL_01a5
+
+	IL_019a:  nop 
+	IL_019b:  ldloc.s 14
+	IL_019d:  ldc.i4.0 
+	IL_019e:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+	IL_01a3:  nop 
+	IL_01a4:  nop 
+	IL_01a5:  ldloc.s 9
+	IL_01a7:  newobj instance void class arv_mu_computation.My.rgmsInfo::'.ctor'()
+	IL_01ac:  stloc.s 21
+	IL_01ae:  ldloc.s 21
+	IL_01b0:  ldloc.s 8
+	IL_01b2:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_01b7:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_01bc:  ldloc.s 8
+	IL_01be:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_01c3:  ldc.i4.1 
+	IL_01c4:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_01c9:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_01ce:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_01d3:  callvirt instance void class arv_mu_computation.My.rgmsInfo::set_num(int32)
+	IL_01d8:  nop 
+	IL_01d9:  ldloc.s 21
+	IL_01db:  ldloc.s 8
+	IL_01dd:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_01e2:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_01e7:  ldloc.s 8
+	IL_01e9:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_01ee:  ldc.i4.2 
+	IL_01ef:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_01f4:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_01f9:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_01fe:  callvirt instance void class arv_mu_computation.My.rgmsInfo::set_name(string)
+	IL_0203:  nop 
+	IL_0204:  ldloc.s 21
+	IL_0206:  ldloc.s 14
+	IL_0208:  callvirt instance void class arv_mu_computation.My.rgmsInfo::set_rId(class [mscorlib]System.Collections.Generic.List`1<int32>)
+	IL_020d:  nop 
+	IL_020e:  ldloc.s 21
+	IL_0210:  ldarg.0 
+	IL_0211:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::rgms
+	IL_0216:  ldloc.s 8
+	IL_0218:  ldfld class [mscorlib]System.Func`2<string,bool> arv_mu_computation.My.compModel/'_Closure$__23-0'::$I0
+	IL_021d:  brfalse.s IL_0228
+
+	IL_021f:  ldloc.s 8
+	IL_0221:  ldfld class [mscorlib]System.Func`2<string,bool> arv_mu_computation.My.compModel/'_Closure$__23-0'::$I0
+	IL_0226:  br.s IL_0241
+
+	IL_0228:  ldloc.s 8
+	IL_022a:  ldloc.s 8
+	IL_022c:  ldftn instance bool class arv_mu_computation.My.compModel/'_Closure$__23-0'::_Lambda$__0(string)
+	IL_0232:  newobj instance void class [mscorlib]System.Func`2<string, bool>::'.ctor'(object, native int)
+	IL_0237:  dup 
+	IL_0238:  stloc.s 22
+	IL_023a:  stfld class [mscorlib]System.Func`2<string,bool> arv_mu_computation.My.compModel/'_Closure$__23-0'::$I0
+	IL_023f:  ldloc.s 22
+	IL_0241:  call class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> class [System.Core]System.Linq.Enumerable::Where<string> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>, class [mscorlib]System.Func`2<!!0,bool>)
+	IL_0246:  call !!0 class [System.Core]System.Linq.Enumerable::FirstOrDefault<string> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_024b:  callvirt instance void class arv_mu_computation.My.rgmsInfo::set_sName(string)
+	IL_0250:  nop 
+	IL_0251:  ldloc.s 21
+	IL_0253:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo>::Add(!0)
+	IL_0258:  nop 
+	IL_0259:  ldloc.s 8
+	IL_025b:  ldloc.s 8
+	IL_025d:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0262:  ldc.i4.1 
+	IL_0263:  add.ovf 
+	IL_0264:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0269:  nop 
+	IL_026a:  ldloc.s 8
+	IL_026c:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0271:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0276:  ldloc.s 8
+	IL_0278:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_027d:  ldc.i4.1 
+	IL_027e:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0283:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0288:  ldnull 
+	IL_0289:  cgt.un 
+	IL_028b:  stloc.s 23
+	IL_028d:  ldloc.s 23
+	IL_028f:  brtrue IL_0100
+
+	IL_0294:  ldloc.s 8
+	IL_0296:  ldloc.s 6
+	IL_0298:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_029d:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_02a2:  ldstr "rems"
+	IL_02a7:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_02ac:  stfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_02b1:  ldloc.s 8
+	IL_02b3:  ldc.i4.2 
+	IL_02b4:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_02b9:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo>::'.ctor'()
+	IL_02be:  stloc.s 10
+	IL_02c0:  br IL_0677
+
+	IL_02c5:  ldloc.s 8
+	IL_02c7:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_02cc:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_02d1:  ldloc.s 8
+	IL_02d3:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_02d8:  ldc.i4.1 
+	IL_02d9:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_02de:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_02e3:  ldnull 
+	IL_02e4:  cgt.un 
+	IL_02e6:  stloc.s 24
+	IL_02e8:  ldloc.s 24
+	IL_02ea:  brfalse IL_0665
+
+	IL_02ef:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId>::'.ctor'()
+	IL_02f4:  stloc.s 25
+	IL_02f6:  ldloc.s 25
+	IL_02f8:  newobj instance void class arv_mu_computation.My.elId::'.ctor'()
+	IL_02fd:  stloc.s 27
+	IL_02ff:  ldloc.s 27
+	IL_0301:  ldloc.s 8
+	IL_0303:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0308:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_030d:  ldloc.s 8
+	IL_030f:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0314:  ldc.i4.3 
+	IL_0315:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_031a:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_031f:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0324:  callvirt instance void class arv_mu_computation.My.elId::set_ip(int32)
+	IL_0329:  nop 
+	IL_032a:  ldloc.s 27
+	IL_032c:  ldloc.s 8
+	IL_032e:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0333:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0338:  ldloc.s 8
+	IL_033a:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_033f:  ldc.i4.4 
+	IL_0340:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0345:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_034a:  brtrue.s IL_0354
+
+	IL_034c:  ldc.i4.0 
+	IL_034d:  box [mscorlib]System.Int32
+	IL_0352:  br.s IL_0372
+
+	IL_0354:  ldloc.s 8
+	IL_0356:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_035b:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0360:  ldloc.s 8
+	IL_0362:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0367:  ldc.i4.4 
+	IL_0368:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_036d:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0372:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0377:  callvirt instance void class arv_mu_computation.My.elId::set_iq(int32)
+	IL_037c:  nop 
+	IL_037d:  ldloc.s 27
+	IL_037f:  ldloc.s 8
+	IL_0381:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0386:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_038b:  ldloc.s 8
+	IL_038d:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0392:  ldc.i4.5 
+	IL_0393:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0398:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_039d:  brtrue.s IL_03a7
+
+	IL_039f:  ldc.i4.0 
+	IL_03a0:  box [mscorlib]System.Int32
+	IL_03a5:  br.s IL_03c5
+
+	IL_03a7:  ldloc.s 8
+	IL_03a9:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_03ae:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_03b3:  ldloc.s 8
+	IL_03b5:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_03ba:  ldc.i4.5 
+	IL_03bb:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_03c0:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_03c5:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_03ca:  callvirt instance void class arv_mu_computation.My.elId::set_np(int32)
+	IL_03cf:  nop 
+	IL_03d0:  ldloc.s 27
+	IL_03d2:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId>::Add(!0)
+	IL_03d7:  nop 
+	IL_03d8:  ldloc.s 8
+	IL_03da:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_03df:  ldc.i4.1 
+	IL_03e0:  add.ovf 
+	IL_03e1:  stloc.s 26
+	IL_03e3:  br IL_04b8
+
+	IL_03e8:  ldloc.s 25
+	IL_03ea:  newobj instance void class arv_mu_computation.My.elId::'.ctor'()
+	IL_03ef:  stloc.s 27
+	IL_03f1:  ldloc.s 27
+	IL_03f3:  ldloc.s 8
+	IL_03f5:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_03fa:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_03ff:  ldloc.s 26
+	IL_0401:  ldc.i4.3 
+	IL_0402:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0407:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_040c:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0411:  callvirt instance void class arv_mu_computation.My.elId::set_ip(int32)
+	IL_0416:  nop 
+	IL_0417:  ldloc.s 27
+	IL_0419:  ldloc.s 8
+	IL_041b:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0420:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0425:  ldloc.s 26
+	IL_0427:  ldc.i4.4 
+	IL_0428:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_042d:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0432:  brtrue.s IL_043c
+
+	IL_0434:  ldc.i4.0 
+	IL_0435:  box [mscorlib]System.Int32
+	IL_043a:  br.s IL_0455
+
+	IL_043c:  ldloc.s 8
+	IL_043e:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0443:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0448:  ldloc.s 26
+	IL_044a:  ldc.i4.4 
+	IL_044b:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0450:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0455:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_045a:  callvirt instance void class arv_mu_computation.My.elId::set_iq(int32)
+	IL_045f:  nop 
+	IL_0460:  ldloc.s 27
+	IL_0462:  ldloc.s 8
+	IL_0464:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0469:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_046e:  ldloc.s 26
+	IL_0470:  ldc.i4.5 
+	IL_0471:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0476:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_047b:  brtrue.s IL_0485
+
+	IL_047d:  ldc.i4.0 
+	IL_047e:  box [mscorlib]System.Int32
+	IL_0483:  br.s IL_049e
+
+	IL_0485:  ldloc.s 8
+	IL_0487:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_048c:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0491:  ldloc.s 26
+	IL_0493:  ldc.i4.5 
+	IL_0494:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0499:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_049e:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_04a3:  callvirt instance void class arv_mu_computation.My.elId::set_np(int32)
+	IL_04a8:  nop 
+	IL_04a9:  ldloc.s 27
+	IL_04ab:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId>::Add(!0)
+	IL_04b0:  nop 
+	IL_04b1:  ldloc.s 26
+	IL_04b3:  ldc.i4.1 
+	IL_04b4:  add.ovf 
+	IL_04b5:  stloc.s 26
+	IL_04b7:  nop 
+	IL_04b8:  ldloc.s 8
+	IL_04ba:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_04bf:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_04c4:  ldloc.s 26
+	IL_04c6:  ldc.i4.1 
+	IL_04c7:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_04cc:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_04d1:  ldnull 
+	IL_04d2:  ceq 
+	IL_04d4:  ldloc.s 8
+	IL_04d6:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_04db:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_04e0:  ldloc.s 26
+	IL_04e2:  ldc.i4.3 
+	IL_04e3:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_04e8:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_04ed:  ldnull 
+	IL_04ee:  cgt.un 
+	IL_04f0:  and 
+	IL_04f1:  stloc.s 28
+	IL_04f3:  ldloc.s 28
+	IL_04f5:  brtrue IL_03e8
+
+	IL_04fa:  ldloc.s 10
+	IL_04fc:  newobj instance void class arv_mu_computation.My.remsInfo::'.ctor'()
+	IL_0501:  stloc.s 29
+	IL_0503:  ldloc.s 29
+	IL_0505:  ldloc.s 8
+	IL_0507:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_050c:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0511:  ldloc.s 8
+	IL_0513:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0518:  ldc.i4.1 
+	IL_0519:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_051e:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0523:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0528:  callvirt instance void class arv_mu_computation.My.remsInfo::set_id(int32)
+	IL_052d:  nop 
+	IL_052e:  ldloc.s 29
+	IL_0530:  ldloc.s 8
+	IL_0532:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0537:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_053c:  ldloc.s 8
+	IL_053e:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0543:  ldc.i4.2 
+	IL_0544:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0549:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_054e:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_0553:  callvirt instance void class arv_mu_computation.My.remsInfo::set_name(string)
+	IL_0558:  nop 
+	IL_0559:  ldloc.s 29
+	IL_055b:  ldloc.s 25
+	IL_055d:  callvirt instance void class arv_mu_computation.My.remsInfo::set_elements(class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId>)
+	IL_0562:  nop 
+	IL_0563:  ldloc.s 29
+	IL_0565:  ldloc.s 8
+	IL_0567:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_056c:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0571:  ldloc.s 8
+	IL_0573:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0578:  ldc.i4.6 
+	IL_0579:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_057e:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0583:  brtrue.s IL_058d
+
+	IL_0585:  ldc.i4.m1 
+	IL_0586:  box [mscorlib]System.Int32
+	IL_058b:  br.s IL_05ab
+
+	IL_058d:  ldloc.s 8
+	IL_058f:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0594:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0599:  ldloc.s 8
+	IL_059b:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_05a0:  ldc.i4.6 
+	IL_05a1:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_05a6:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_05ab:  call float64 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToDouble(object)
+	IL_05b0:  callvirt instance void class arv_mu_computation.My.remsInfo::set_mpdValue(float64)
+	IL_05b5:  nop 
+	IL_05b6:  ldloc.s 29
+	IL_05b8:  ldloc.s 8
+	IL_05ba:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_05bf:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_05c4:  ldloc.s 8
+	IL_05c6:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_05cb:  ldc.i4.7 
+	IL_05cc:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_05d1:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_05d6:  brtrue.s IL_05e0
+
+	IL_05d8:  ldc.i4.m1 
+	IL_05d9:  box [mscorlib]System.Int32
+	IL_05de:  br.s IL_05fe
+
+	IL_05e0:  ldloc.s 8
+	IL_05e2:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_05e7:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_05ec:  ldloc.s 8
+	IL_05ee:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_05f3:  ldc.i4.7 
+	IL_05f4:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_05f9:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_05fe:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0603:  callvirt instance void class arv_mu_computation.My.remsInfo::set_schId(int32)
+	IL_0608:  nop 
+	IL_0609:  ldloc.s 29
+	IL_060b:  ldloc.s 8
+	IL_060d:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0612:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0617:  ldloc.s 8
+	IL_0619:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_061e:  ldc.i4.8 
+	IL_061f:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0624:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0629:  brtrue.s IL_0633
+
+	IL_062b:  ldc.i4.m1 
+	IL_062c:  box [mscorlib]System.Int32
+	IL_0631:  br.s IL_0651
+
+	IL_0633:  ldloc.s 8
+	IL_0635:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_063a:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_063f:  ldloc.s 8
+	IL_0641:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0646:  ldc.i4.8 
+	IL_0647:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_064c:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0651:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0656:  callvirt instance void class arv_mu_computation.My.remsInfo::set_utId(int32)
+	IL_065b:  nop 
+	IL_065c:  ldloc.s 29
+	IL_065e:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo>::Add(!0)
+	IL_0663:  nop 
+	IL_0664:  nop 
+	IL_0665:  nop 
+	IL_0666:  ldloc.s 8
+	IL_0668:  ldloc.s 8
+	IL_066a:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_066f:  ldc.i4.1 
+	IL_0670:  add.ovf 
+	IL_0671:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0676:  nop 
+	IL_0677:  ldloc.s 8
+	IL_0679:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_067e:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0683:  ldloc.s 8
+	IL_0685:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_068a:  ldc.i4.3 
+	IL_068b:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0690:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0695:  ldnull 
+	IL_0696:  cgt.un 
+	IL_0698:  stloc.s 30
+	IL_069a:  ldloc.s 30
+	IL_069c:  brtrue IL_02c5
+
+	IL_06a1:  ldloc.s 8
+	IL_06a3:  ldloc.s 6
+	IL_06a5:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_06aa:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_06af:  ldstr "ut"
+	IL_06b4:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_06b9:  stfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_06be:  ldloc.s 8
+	IL_06c0:  ldc.i4.2 
+	IL_06c1:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_06c6:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo>::'.ctor'()
+	IL_06cb:  stloc.s 11
+	IL_06cd:  br IL_078d
+
+	IL_06d2:  ldloc.s 11
+	IL_06d4:  newobj instance void class arv_mu_computation.My.utInfo::'.ctor'()
+	IL_06d9:  stloc.s 31
+	IL_06db:  ldloc.s 31
+	IL_06dd:  ldloc.s 8
+	IL_06df:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_06e4:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_06e9:  ldloc.s 8
+	IL_06eb:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_06f0:  ldc.i4.1 
+	IL_06f1:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_06f6:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_06fb:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0700:  callvirt instance void class arv_mu_computation.My.utInfo::set_id(int32)
+	IL_0705:  nop 
+	IL_0706:  ldloc.s 31
+	IL_0708:  ldloc.s 8
+	IL_070a:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_070f:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0714:  ldloc.s 8
+	IL_0716:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_071b:  ldc.i4.2 
+	IL_071c:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0721:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0726:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_072b:  callvirt instance void class arv_mu_computation.My.utInfo::set_name(string)
+	IL_0730:  nop 
+	IL_0731:  ldloc.s 31
+	IL_0733:  ldarg.0 
+	IL_0734:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::ut2Files
+	IL_0739:  ldloc.s 8
+	IL_073b:  ldfld class [mscorlib]System.Func`2<string,bool> arv_mu_computation.My.compModel/'_Closure$__23-0'::$I1
+	IL_0740:  brfalse.s IL_074b
+
+	IL_0742:  ldloc.s 8
+	IL_0744:  ldfld class [mscorlib]System.Func`2<string,bool> arv_mu_computation.My.compModel/'_Closure$__23-0'::$I1
+	IL_0749:  br.s IL_0764
+
+	IL_074b:  ldloc.s 8
+	IL_074d:  ldloc.s 8
+	IL_074f:  ldftn instance bool class arv_mu_computation.My.compModel/'_Closure$__23-0'::_Lambda$__1(string)
+	IL_0755:  newobj instance void class [mscorlib]System.Func`2<string, bool>::'.ctor'(object, native int)
+	IL_075a:  dup 
+	IL_075b:  stloc.s 22
+	IL_075d:  stfld class [mscorlib]System.Func`2<string,bool> arv_mu_computation.My.compModel/'_Closure$__23-0'::$I1
+	IL_0762:  ldloc.s 22
+	IL_0764:  call class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> class [System.Core]System.Linq.Enumerable::Where<string> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>, class [mscorlib]System.Func`2<!!0,bool>)
+	IL_0769:  call !!0 class [System.Core]System.Linq.Enumerable::FirstOrDefault<string> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_076e:  callvirt instance void class arv_mu_computation.My.utInfo::set_sName(string)
+	IL_0773:  nop 
+	IL_0774:  ldloc.s 31
+	IL_0776:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo>::Add(!0)
+	IL_077b:  nop 
+	IL_077c:  ldloc.s 8
+	IL_077e:  ldloc.s 8
+	IL_0780:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0785:  ldc.i4.1 
+	IL_0786:  add.ovf 
+	IL_0787:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_078c:  nop 
+	IL_078d:  ldloc.s 8
+	IL_078f:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0794:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0799:  ldloc.s 8
+	IL_079b:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_07a0:  ldc.i4.1 
+	IL_07a1:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_07a6:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_07ab:  ldnull 
+	IL_07ac:  cgt.un 
+	IL_07ae:  stloc.s 32
+	IL_07b0:  ldloc.s 32
+	IL_07b2:  brtrue IL_06d2
+
+	IL_07b7:  ldloc.s 8
+	IL_07b9:  ldloc.s 6
+	IL_07bb:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_07c0:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_07c5:  ldstr "arv"
+	IL_07ca:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_07cf:  stfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_07d4:  ldloc.s 8
+	IL_07d6:  ldc.i4.2 
+	IL_07d7:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_07dc:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo>::'.ctor'()
+	IL_07e1:  stloc.s 12
+	IL_07e3:  br IL_08ae
+
+	IL_07e8:  ldloc.s 12
+	IL_07ea:  newobj instance void class arv_mu_computation.My.pssInfo::'.ctor'()
+	IL_07ef:  dup 
+	IL_07f0:  ldloc.s 8
+	IL_07f2:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_07f7:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_07fc:  ldloc.s 8
+	IL_07fe:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0803:  ldc.i4.1 
+	IL_0804:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0809:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_080e:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_0813:  callvirt instance void class arv_mu_computation.My.pssInfo::set_table(string)
+	IL_0818:  nop 
+	IL_0819:  dup 
+	IL_081a:  ldloc.s 8
+	IL_081c:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0821:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0826:  ldloc.s 8
+	IL_0828:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_082d:  ldc.i4.2 
+	IL_082e:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0833:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0838:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_083d:  callvirt instance void class arv_mu_computation.My.pssInfo::set_param(string)
+	IL_0842:  nop 
+	IL_0843:  dup 
+	IL_0844:  ldloc.s 8
+	IL_0846:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_084b:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0850:  ldloc.s 8
+	IL_0852:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0857:  ldc.i4.3 
+	IL_0858:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_085d:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0862:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(object)
+	IL_0867:  callvirt instance void class arv_mu_computation.My.pssInfo::set_id(int32)
+	IL_086c:  nop 
+	IL_086d:  dup 
+	IL_086e:  ldloc.s 8
+	IL_0870:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0875:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_087a:  ldloc.s 8
+	IL_087c:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0881:  ldc.i4.4 
+	IL_0882:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0887:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_088c:  call float64 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToDouble(object)
+	IL_0891:  callvirt instance void class arv_mu_computation.My.pssInfo::set_val(float64)
+	IL_0896:  nop 
+	IL_0897:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo>::Add(!0)
+	IL_089c:  nop 
+	IL_089d:  ldloc.s 8
+	IL_089f:  ldloc.s 8
+	IL_08a1:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_08a6:  ldc.i4.1 
+	IL_08a7:  add.ovf 
+	IL_08a8:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_08ad:  nop 
+	IL_08ae:  ldloc.s 8
+	IL_08b0:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_08b5:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_08ba:  ldloc.s 8
+	IL_08bc:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_08c1:  ldc.i4.1 
+	IL_08c2:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_08c7:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_08cc:  ldnull 
+	IL_08cd:  cgt.un 
+	IL_08cf:  stloc.s 33
+	IL_08d1:  ldloc.s 33
+	IL_08d3:  brtrue IL_07e8
+
+	IL_08d8:  ldloc.s 8
+	IL_08da:  ldloc.s 6
+	IL_08dc:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorkbook class [EPPlus]OfficeOpenXml.ExcelPackage::get_Workbook()
+	IL_08e1:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheets class [EPPlus]OfficeOpenXml.ExcelWorkbook::get_Worksheets()
+	IL_08e6:  ldstr "grf"
+	IL_08eb:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelWorksheet class [EPPlus]OfficeOpenXml.ExcelWorksheets::get_Item(string)
+	IL_08f0:  stfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_08f5:  ldloc.s 8
+	IL_08f7:  ldc.i4.2 
+	IL_08f8:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_08fd:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo>::'.ctor'()
+	IL_0902:  stloc.s 13
+	IL_0904:  br IL_0a1e
+
+	IL_0909:  ldloc.s 8
+	IL_090b:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0910:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0915:  ldloc.s 8
+	IL_0917:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_091c:  ldc.i4.3 
+	IL_091d:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0922:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0927:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_092c:  stloc.s 34
+	IL_092e:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<int32>::'.ctor'()
+	IL_0933:  stloc.s 35
+	IL_0935:  ldloc.s 34
+	IL_0937:  ldc.i4.1 
+	IL_0938:  newarr [mscorlib]System.Char
+	IL_093d:  dup 
+	IL_093e:  ldc.i4.0 
+	IL_093f:  ldc.i4.s 0x2b
+	IL_0941:  stelem.i2 
+	IL_0942:  callvirt instance string[] string::Split(char[])
+	IL_0947:  stloc.s 36
+	IL_0949:  ldc.i4.0 
+	IL_094a:  stloc.s 37
+	IL_094c:  br.s IL_096b
+
+	IL_094e:  ldloc.s 36
+	IL_0950:  ldloc.s 37
+	IL_0952:  ldelem.ref 
+	IL_0953:  stloc.s 38
+	IL_0955:  ldloc.s 35
+	IL_0957:  ldloc.s 38
+	IL_0959:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToInteger(string)
+	IL_095e:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+	IL_0963:  nop 
+	IL_0964:  nop 
+	IL_0965:  ldloc.s 37
+	IL_0967:  ldc.i4.1 
+	IL_0968:  add.ovf 
+	IL_0969:  stloc.s 37
+	IL_096b:  ldloc.s 37
+	IL_096d:  ldloc.s 36
+	IL_096f:  ldlen 
+	IL_0970:  conv.i4 
+	IL_0971:  clt 
+	IL_0973:  stloc.s 39
+	IL_0975:  ldloc.s 39
+	IL_0977:  brtrue.s IL_094e
+
+	IL_0979:  ldloc.s 13
+	IL_097b:  newobj instance void class arv_mu_computation.My.grfInfo::'.ctor'()
+	IL_0980:  dup 
+	IL_0981:  ldloc.s 8
+	IL_0983:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0988:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_098d:  ldloc.s 8
+	IL_098f:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0994:  ldc.i4.1 
+	IL_0995:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_099a:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_099f:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_09a4:  callvirt instance void class arv_mu_computation.My.grfInfo::set_table(string)
+	IL_09a9:  nop 
+	IL_09aa:  dup 
+	IL_09ab:  ldloc.s 8
+	IL_09ad:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_09b2:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_09b7:  ldloc.s 8
+	IL_09b9:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_09be:  ldc.i4.2 
+	IL_09bf:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_09c4:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_09c9:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_09ce:  callvirt instance void class arv_mu_computation.My.grfInfo::set_param(string)
+	IL_09d3:  nop 
+	IL_09d4:  dup 
+	IL_09d5:  ldloc.s 35
+	IL_09d7:  callvirt instance void class arv_mu_computation.My.grfInfo::set_id(class [mscorlib]System.Collections.Generic.List`1<int32>)
+	IL_09dc:  nop 
+	IL_09dd:  dup 
+	IL_09de:  ldloc.s 8
+	IL_09e0:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_09e5:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_09ea:  ldloc.s 8
+	IL_09ec:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_09f1:  ldc.i4.4 
+	IL_09f2:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_09f7:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_09fc:  call string [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Conversions::ToString(object)
+	IL_0a01:  callvirt instance void class arv_mu_computation.My.grfInfo::set_name(string)
+	IL_0a06:  nop 
+	IL_0a07:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo>::Add(!0)
+	IL_0a0c:  nop 
+	IL_0a0d:  ldloc.s 8
+	IL_0a0f:  ldloc.s 8
+	IL_0a11:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0a16:  ldc.i4.1 
+	IL_0a17:  add.ovf 
+	IL_0a18:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0a1d:  nop 
+	IL_0a1e:  ldloc.s 8
+	IL_0a20:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0a25:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0a2a:  ldloc.s 8
+	IL_0a2c:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0a31:  ldc.i4.1 
+	IL_0a32:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_0a37:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0a3c:  ldnull 
+	IL_0a3d:  cgt.un 
+	IL_0a3f:  stloc.s 40
+	IL_0a41:  ldloc.s 40
+	IL_0a43:  brtrue IL_0909
+
+	IL_0a48:  ldarg.0 
+	IL_0a49:  ldfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_0a4e:  ldloc.s 9
+	IL_0a50:  callvirt instance void class arv_mu_computation.My.comInfo::set_rgms(class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo>)
+	IL_0a55:  nop 
+	IL_0a56:  ldarg.0 
+	IL_0a57:  ldfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_0a5c:  ldloc.s 10
+	IL_0a5e:  callvirt instance void class arv_mu_computation.My.comInfo::set_rems(class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo>)
+	IL_0a63:  nop 
+	IL_0a64:  ldarg.0 
+	IL_0a65:  ldfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_0a6a:  ldloc.s 11
+	IL_0a6c:  callvirt instance void class arv_mu_computation.My.comInfo::set_ut(class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo>)
+	IL_0a71:  nop 
+	IL_0a72:  ldarg.0 
+	IL_0a73:  ldfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_0a78:  ldloc.s 12
+	IL_0a7a:  callvirt instance void class arv_mu_computation.My.comInfo::set_arv(class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo>)
+	IL_0a7f:  nop 
+	IL_0a80:  ldarg.0 
+	IL_0a81:  ldfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_0a86:  ldloc.s 13
+	IL_0a88:  callvirt instance void class arv_mu_computation.My.comInfo::set_grf(class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo>)
+	IL_0a8d:  nop 
+	IL_0a8e:  ldarg.0 
+	IL_0a8f:  ldfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_0a94:  ldloc.3 
+	IL_0a95:  call string class [mscorlib]System.IO.Path::GetFileNameWithoutExtension(string)
+	IL_0a9a:  callvirt instance void class arv_mu_computation.My.comInfo::set_name(string)
+	IL_0a9f:  nop 
+	IL_0aa0:  nop 
+	IL_0aa1:  nop 
+	IL_0aa2:  nop 
+	IL_0aa3:  nop 
+	IL_0aa4:  nop 
+	IL_0aa5:  ldloc.2 
+	IL_0aa6:  ldc.i4.1 
+	IL_0aa7:  add.ovf 
+	IL_0aa8:  stloc.2 
+	IL_0aa9:  ldloc.2 
+	IL_0aaa:  ldloc.1 
+	IL_0aab:  ldlen 
+	IL_0aac:  conv.i4 
+	IL_0aad:  clt 
+	IL_0aaf:  stloc.s 41
+	IL_0ab1:  ldloc.s 41
+	IL_0ab3:  brtrue IL_000f
+
+	IL_0ab8:  ldarg.0 
+	IL_0ab9:  ldfld class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::xlsFile
+	IL_0abe:  stloc.0 
+	IL_0abf:  br.s IL_0ac1
+
+	IL_0ac1:  ldloc.0 
+	IL_0ac2:  ret 
+    } // end of method compModel::get_xlxs
+
+    // method line 13
+    .method public specialname 
+           instance default void set_xlxs (class arv_mu_computation.My.comInfo 'value')  cil managed 
+    {
+        // Method begins at RVA 0x2ed3
+	// Code size 2 (0x2)
+	.maxstack 8
+	IL_0000:  nop 
+	IL_0001:  ret 
+    } // end of method compModel::set_xlxs
+
+    // method line 14
+    .method public final virtual newslot specialname strict 
+           instance default void add_PropertyChanged (class [System]System.ComponentModel.PropertyChangedEventHandler obj)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2ed8
+	.override class [System]System.ComponentModel.INotifyPropertyChanged::add_PropertyChanged
+	// Code size 41 (0x29)
+	.maxstack 3
+	.locals init (
+		class [System]System.ComponentModel.PropertyChangedEventHandler	V_0,
+		class [System]System.ComponentModel.PropertyChangedEventHandler	V_1,
+		class [System]System.ComponentModel.PropertyChangedEventHandler	V_2)
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [System]System.ComponentModel.PropertyChangedEventHandler arv_mu_computation.My.compModel::PropertyChangedEvent
+	IL_0006:  stloc.0 
+	IL_0007:  ldloc.0 
+	IL_0008:  stloc.1 
+	IL_0009:  ldloc.1 
+	IL_000a:  ldarg.1 
+	IL_000b:  call class [mscorlib]System.Delegate class [mscorlib]System.Delegate::Combine(class [mscorlib]System.Delegate, class [mscorlib]System.Delegate)
+	IL_0010:  castclass [System]System.ComponentModel.PropertyChangedEventHandler
+	IL_0015:  stloc.2 
+	IL_0016:  ldarg.0 
+	IL_0017:  ldflda class [System]System.ComponentModel.PropertyChangedEventHandler arv_mu_computation.My.compModel::PropertyChangedEvent
+	IL_001c:  ldloc.2 
+	IL_001d:  ldloc.1 
+	IL_001e:  call !!0 class [mscorlib]System.Threading.Interlocked::CompareExchange<class [System]System.ComponentModel.PropertyChangedEventHandler> ([out] !!0&, !!0, !!0)
+	IL_0023:  stloc.0 
+	IL_0024:  ldloc.0 
+	IL_0025:  ldloc.1 
+	IL_0026:  bne.un.s IL_0007
+
+	IL_0028:  ret 
+    } // end of method compModel::add_PropertyChanged
+
+    // method line 15
+    .method public final virtual newslot specialname strict 
+           instance default void remove_PropertyChanged (class [System]System.ComponentModel.PropertyChangedEventHandler obj)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2f10
+	.override class [System]System.ComponentModel.INotifyPropertyChanged::remove_PropertyChanged
+	// Code size 41 (0x29)
+	.maxstack 3
+	.locals init (
+		class [System]System.ComponentModel.PropertyChangedEventHandler	V_0,
+		class [System]System.ComponentModel.PropertyChangedEventHandler	V_1,
+		class [System]System.ComponentModel.PropertyChangedEventHandler	V_2)
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [System]System.ComponentModel.PropertyChangedEventHandler arv_mu_computation.My.compModel::PropertyChangedEvent
+	IL_0006:  stloc.0 
+	IL_0007:  ldloc.0 
+	IL_0008:  stloc.1 
+	IL_0009:  ldloc.1 
+	IL_000a:  ldarg.1 
+	IL_000b:  call class [mscorlib]System.Delegate class [mscorlib]System.Delegate::Remove(class [mscorlib]System.Delegate, class [mscorlib]System.Delegate)
+	IL_0010:  castclass [System]System.ComponentModel.PropertyChangedEventHandler
+	IL_0015:  stloc.2 
+	IL_0016:  ldarg.0 
+	IL_0017:  ldflda class [System]System.ComponentModel.PropertyChangedEventHandler arv_mu_computation.My.compModel::PropertyChangedEvent
+	IL_001c:  ldloc.2 
+	IL_001d:  ldloc.1 
+	IL_001e:  call !!0 class [mscorlib]System.Threading.Interlocked::CompareExchange<class [System]System.ComponentModel.PropertyChangedEventHandler> ([out] !!0&, !!0, !!0)
+	IL_0023:  stloc.0 
+	IL_0024:  ldloc.0 
+	IL_0025:  ldloc.1 
+	IL_0026:  bne.un.s IL_0007
+
+	IL_0028:  ret 
+    } // end of method compModel::remove_PropertyChanged
+
+    // method line 16
+    .method private 
+           instance default void NotifyPropertyChanged ([opt] string propertyName)  cil managed 
+    {
+	.param [1] = nullref
+	.custom instance void class [mscorlib]System.Runtime.CompilerServices.CallerMemberNameAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2f48
+	// Code size 26 (0x1a)
+	.maxstack 3
+	.locals init (
+		class [System]System.ComponentModel.PropertyChangedEventHandler	V_0)
+	IL_0000:  nop 
+	IL_0001:  ldarg.0 
+	IL_0002:  ldfld class [System]System.ComponentModel.PropertyChangedEventHandler arv_mu_computation.My.compModel::PropertyChangedEvent
+	IL_0007:  stloc.0 
+	IL_0008:  ldloc.0 
+	IL_0009:  brfalse.s IL_0019
+
+	IL_000b:  ldloc.0 
+	IL_000c:  ldarg.0 
+	IL_000d:  ldarg.1 
+	IL_000e:  newobj instance void class [System]System.ComponentModel.PropertyChangedEventArgs::'.ctor'(string)
+	IL_0013:  callvirt instance void class [System]System.ComponentModel.PropertyChangedEventHandler::Invoke(object, class [System]System.ComponentModel.PropertyChangedEventArgs)
+	IL_0018:  nop 
+	IL_0019:  ret 
+    } // end of method compModel::NotifyPropertyChanged
+
+	.property instance string[] files ()
+	{
+		.get instance default string[] arv_mu_computation.My.compModel::get_files () 
+		.set instance default void arv_mu_computation.My.compModel::set_files (string[] 'value') 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<string> regims ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::get_regims () 
+		.set instance default void arv_mu_computation.My.compModel::set_regims (class [mscorlib]System.Collections.Generic.List`1<string> 'value') 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<string> ut2s ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<string> arv_mu_computation.My.compModel::get_ut2s () 
+		.set instance default void arv_mu_computation.My.compModel::set_ut2s (class [mscorlib]System.Collections.Generic.List`1<string> 'value') 
+	}
+	.property instance string schs ()
+	{
+		.get instance default string arv_mu_computation.My.compModel::get_schs () 
+		.set instance default void arv_mu_computation.My.compModel::set_schs (string 'value') 
+	}
+	.property instance string scns ()
+	{
+		.get instance default string arv_mu_computation.My.compModel::get_scns () 
+		.set instance default void arv_mu_computation.My.compModel::set_scns (string 'value') 
+	}
+	.property instance class arv_mu_computation.My.comInfo xlxs ()
+	{
+		.get instance default class arv_mu_computation.My.comInfo arv_mu_computation.My.compModel::get_xlxs () 
+		.set instance default void arv_mu_computation.My.compModel::set_xlxs (class arv_mu_computation.My.comInfo 'value') 
+	}
+	.event [System]System.ComponentModel.PropertyChangedEventHandler PropertyChanged
+	{
+		.addon instance default void arv_mu_computation.My.compModel::add_PropertyChanged (class [System]System.ComponentModel.PropertyChangedEventHandler obj) 
+		.removeon instance default void arv_mu_computation.My.compModel::remove_PropertyChanged (class [System]System.ComponentModel.PropertyChangedEventHandler obj) 
+	}
+  .class nested assembly auto ansi sealed '_Closure$__11-0'
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .field  public  string $VB$Local_row
+
+    // method line 238
+    .method public specialname rtspecialname 
+           instance default void '.ctor' (class arv_mu_computation.My.compModel/'_Closure$__11-0' arg0)  cil managed 
+    {
+        // Method begins at RVA 0x7cb4
+	// Code size 22 (0x16)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ldarg.1 
+	IL_0007:  brfalse.s IL_0015
+
+	IL_0009:  ldarg.0 
+	IL_000a:  ldarg.1 
+	IL_000b:  ldfld string arv_mu_computation.My.compModel/'_Closure$__11-0'::$VB$Local_row
+	IL_0010:  stfld string arv_mu_computation.My.compModel/'_Closure$__11-0'::$VB$Local_row
+	IL_0015:  ret 
+    } // end of method _Closure$__11-0::.ctor
+
+    // method line 239
+    .method assembly specialname 
+           instance default bool _Lambda$__0 (class arv_mu_computation.My.rgmsInfo x)  cil managed 
+    {
+        // Method begins at RVA 0x7ccc
+	// Code size 32 (0x20)
+	.maxstack 3
+	.locals init (
+		bool	V_0)
+	IL_0000:  nop 
+	IL_0001:  ldarg.1 
+	IL_0002:  callvirt instance string class arv_mu_computation.My.rgmsInfo::get_name()
+	IL_0007:  ldarg.0 
+	IL_0008:  ldfld string arv_mu_computation.My.compModel/'_Closure$__11-0'::$VB$Local_row
+	IL_000d:  call string class [mscorlib]System.IO.Path::GetFileNameWithoutExtension(string)
+	IL_0012:  ldc.i4.0 
+	IL_0013:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0018:  ldc.i4.0 
+	IL_0019:  ceq 
+	IL_001b:  stloc.0 
+	IL_001c:  br.s IL_001e
+
+	IL_001e:  ldloc.0 
+	IL_001f:  ret 
+    } // end of method _Closure$__11-0::_Lambda$__0
+
+  } // end of class _Closure$__11-0
+
+  .class nested assembly auto ansi sealed '_Closure$__14-0'
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .field  public  string $VB$Local_row
+
+    // method line 240
+    .method public specialname rtspecialname 
+           instance default void '.ctor' (class arv_mu_computation.My.compModel/'_Closure$__14-0' arg0)  cil managed 
+    {
+        // Method begins at RVA 0x7cf8
+	// Code size 22 (0x16)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ldarg.1 
+	IL_0007:  brfalse.s IL_0015
+
+	IL_0009:  ldarg.0 
+	IL_000a:  ldarg.1 
+	IL_000b:  ldfld string arv_mu_computation.My.compModel/'_Closure$__14-0'::$VB$Local_row
+	IL_0010:  stfld string arv_mu_computation.My.compModel/'_Closure$__14-0'::$VB$Local_row
+	IL_0015:  ret 
+    } // end of method _Closure$__14-0::.ctor
+
+    // method line 241
+    .method assembly specialname 
+           instance default bool _Lambda$__0 (class arv_mu_computation.My.utInfo x)  cil managed 
+    {
+        // Method begins at RVA 0x7d10
+	// Code size 32 (0x20)
+	.maxstack 3
+	.locals init (
+		bool	V_0)
+	IL_0000:  nop 
+	IL_0001:  ldarg.1 
+	IL_0002:  callvirt instance string class arv_mu_computation.My.utInfo::get_name()
+	IL_0007:  ldarg.0 
+	IL_0008:  ldfld string arv_mu_computation.My.compModel/'_Closure$__14-0'::$VB$Local_row
+	IL_000d:  call string class [mscorlib]System.IO.Path::GetFileNameWithoutExtension(string)
+	IL_0012:  ldc.i4.0 
+	IL_0013:  call int32 [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::CompareString(string, string, bool)
+	IL_0018:  ldc.i4.0 
+	IL_0019:  ceq 
+	IL_001b:  stloc.0 
+	IL_001c:  br.s IL_001e
+
+	IL_001e:  ldloc.0 
+	IL_001f:  ret 
+    } // end of method _Closure$__14-0::_Lambda$__0
+
+  } // end of class _Closure$__14-0
+
+  .class nested assembly auto ansi sealed '_Closure$__23-0'
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .field  public  class [EPPlus]OfficeOpenXml.ExcelWorksheet $VB$Local_ws
+    .field  public  int32 $VB$Local_j
+    .field  public  class [mscorlib]System.Func`2<string,bool> $I0
+    .field  public  class [mscorlib]System.Func`2<string,bool> $I1
+
+    // method line 242
+    .method public specialname rtspecialname 
+           instance default void '.ctor' (class arv_mu_computation.My.compModel/'_Closure$__23-0' arg0)  cil managed 
+    {
+        // Method begins at RVA 0x7d3c
+	// Code size 34 (0x22)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ldarg.1 
+	IL_0007:  brfalse.s IL_0021
+
+	IL_0009:  ldarg.0 
+	IL_000a:  ldarg.1 
+	IL_000b:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0010:  stfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_0015:  ldarg.0 
+	IL_0016:  ldarg.1 
+	IL_0017:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_001c:  stfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0021:  ret 
+    } // end of method _Closure$__23-0::.ctor
+
+    // method line 243
+    .method assembly specialname 
+           instance default bool _Lambda$__0 (string x)  cil managed 
+    {
+        // Method begins at RVA 0x7d60
+	// Code size 46 (0x2e)
+	.maxstack 4
+	.locals init (
+		bool	V_0)
+	IL_0000:  nop 
+	IL_0001:  ldarg.1 
+	IL_0002:  call string class [mscorlib]System.IO.Path::GetFileNameWithoutExtension(string)
+	IL_0007:  ldarg.0 
+	IL_0008:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_000d:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0012:  ldarg.0 
+	IL_0013:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0018:  ldc.i4.2 
+	IL_0019:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_001e:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0023:  ldc.i4.0 
+	IL_0024:  call bool [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::ConditionalCompareObjectEqual(object, object, bool)
+	IL_0029:  stloc.0 
+	IL_002a:  br.s IL_002c
+
+	IL_002c:  ldloc.0 
+	IL_002d:  ret 
+    } // end of method _Closure$__23-0::_Lambda$__0
+
+    // method line 244
+    .method assembly specialname 
+           instance default bool _Lambda$__1 (string x)  cil managed 
+    {
+        // Method begins at RVA 0x7d9c
+	// Code size 46 (0x2e)
+	.maxstack 4
+	.locals init (
+		bool	V_0)
+	IL_0000:  nop 
+	IL_0001:  ldarg.1 
+	IL_0002:  call string class [mscorlib]System.IO.Path::GetFileNameWithoutExtension(string)
+	IL_0007:  ldarg.0 
+	IL_0008:  ldfld class [EPPlus]OfficeOpenXml.ExcelWorksheet arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_ws
+	IL_000d:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelWorksheet::get_Cells()
+	IL_0012:  ldarg.0 
+	IL_0013:  ldfld int32 arv_mu_computation.My.compModel/'_Closure$__23-0'::$VB$Local_j
+	IL_0018:  ldc.i4.2 
+	IL_0019:  callvirt instance class [EPPlus]OfficeOpenXml.ExcelRange class [EPPlus]OfficeOpenXml.ExcelRange::get_Item(int32, int32)
+	IL_001e:  callvirt instance object class [EPPlus]OfficeOpenXml.ExcelRangeBase::get_Value()
+	IL_0023:  ldc.i4.0 
+	IL_0024:  call bool [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.Operators::ConditionalCompareObjectEqual(object, object, bool)
+	IL_0029:  stloc.0 
+	IL_002a:  br.s IL_002c
+
+	IL_002c:  ldloc.0 
+	IL_002d:  ret 
+    } // end of method _Closure$__23-0::_Lambda$__1
+
+  } // end of class _Closure$__23-0
+
+  } // end of class arv_mu_computation.My.compModel
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi grfData
+  	extends [mscorlib]System.Object
+  {
+    .field  private  string _name
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> _pssOn
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> _pssOff
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  float64 _sPoint
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 17
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2f6e
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method grfData::.ctor
+
+    // method line 18
+    .method public specialname 
+           instance default string get_name ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2f76
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.grfData::_name
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfData::get_name
+
+    // method line 19
+    .method public specialname 
+           instance default void set_name (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2f80
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.grfData::_name
+	IL_0007:  ret 
+    } // end of method grfData::set_name
+
+    // method line 20
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> get_pssOn ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2f89
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> arv_mu_computation.My.grfData::_pssOn
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfData::get_pssOn
+
+    // method line 21
+    .method public specialname 
+           instance default void set_pssOn (class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2f93
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> arv_mu_computation.My.grfData::_pssOn
+	IL_0007:  ret 
+    } // end of method grfData::set_pssOn
+
+    // method line 22
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> get_pssOff ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2f9c
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> arv_mu_computation.My.grfData::_pssOff
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfData::get_pssOff
+
+    // method line 23
+    .method public specialname 
+           instance default void set_pssOff (class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2fa6
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> arv_mu_computation.My.grfData::_pssOff
+	IL_0007:  ret 
+    } // end of method grfData::set_pssOff
+
+    // method line 24
+    .method public specialname 
+           instance default float64 get_sPoint ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2faf
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld float64 arv_mu_computation.My.grfData::_sPoint
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfData::get_sPoint
+
+    // method line 25
+    .method public specialname 
+           instance default void set_sPoint (float64 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2fb9
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld float64 arv_mu_computation.My.grfData::_sPoint
+	IL_0007:  ret 
+    } // end of method grfData::set_sPoint
+
+	.property instance string name ()
+	{
+		.get instance default string arv_mu_computation.My.grfData::get_name () 
+		.set instance default void arv_mu_computation.My.grfData::set_name (string AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> pssOn ()
+	{
+		.get instance default class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> arv_mu_computation.My.grfData::get_pssOn () 
+		.set instance default void arv_mu_computation.My.grfData::set_pssOn (class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> pssOff ()
+	{
+		.get instance default class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> arv_mu_computation.My.grfData::get_pssOff () 
+		.set instance default void arv_mu_computation.My.grfData::set_pssOff (class [mscorlib]System.Collections.ObjectModel.Collection`1<class arv_mu_computation.My.datevalue> AutoPropertyValue) 
+	}
+	.property instance float64 sPoint ()
+	{
+		.get instance default float64 arv_mu_computation.My.grfData::get_sPoint () 
+		.set instance default void arv_mu_computation.My.grfData::set_sPoint (float64 AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.grfData
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi datevalue
+  	extends [mscorlib]System.Object
+  {
+    .field  private  float64 _t
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  float64 _v
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 26
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2fc2
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method datevalue::.ctor
+
+    // method line 27
+    .method public specialname 
+           instance default float64 get_t ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2fca
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld float64 arv_mu_computation.My.datevalue::_t
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method datevalue::get_t
+
+    // method line 28
+    .method public specialname 
+           instance default void set_t (float64 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2fd4
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld float64 arv_mu_computation.My.datevalue::_t
+	IL_0007:  ret 
+    } // end of method datevalue::set_t
+
+    // method line 29
+    .method public specialname 
+           instance default float64 get_v ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2fdd
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld float64 arv_mu_computation.My.datevalue::_v
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method datevalue::get_v
+
+    // method line 30
+    .method public specialname 
+           instance default void set_v (float64 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2fe7
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld float64 arv_mu_computation.My.datevalue::_v
+	IL_0007:  ret 
+    } // end of method datevalue::set_v
+
+	.property instance float64 t ()
+	{
+		.get instance default float64 arv_mu_computation.My.datevalue::get_t () 
+		.set instance default void arv_mu_computation.My.datevalue::set_t (float64 AutoPropertyValue) 
+	}
+	.property instance float64 v ()
+	{
+		.get instance default float64 arv_mu_computation.My.datevalue::get_v () 
+		.set instance default void arv_mu_computation.My.datevalue::set_v (float64 AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.datevalue
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi grfSize
+  	extends [mscorlib]System.Object
+  {
+    .field  private  int32 _j
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  int32 _grfAm
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 31
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x2ff0
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method grfSize::.ctor
+
+    // method line 32
+    .method public specialname 
+           instance default int32 get_j ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x2ff8
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.grfSize::_j
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfSize::get_j
+
+    // method line 33
+    .method public specialname 
+           instance default void set_j (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3002
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.grfSize::_j
+	IL_0007:  ret 
+    } // end of method grfSize::set_j
+
+    // method line 34
+    .method public specialname 
+           instance default int32 get_grfAm ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x300b
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.grfSize::_grfAm
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfSize::get_grfAm
+
+    // method line 35
+    .method public specialname 
+           instance default void set_grfAm (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3015
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.grfSize::_grfAm
+	IL_0007:  ret 
+    } // end of method grfSize::set_grfAm
+
+	.property instance int32 j ()
+	{
+		.get instance default int32 arv_mu_computation.My.grfSize::get_j () 
+		.set instance default void arv_mu_computation.My.grfSize::set_j (int32 AutoPropertyValue) 
+	}
+	.property instance int32 grfAm ()
+	{
+		.get instance default int32 arv_mu_computation.My.grfSize::get_grfAm () 
+		.set instance default void arv_mu_computation.My.grfSize::set_grfAm (int32 AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.grfSize
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi rgmsInfo
+  	extends [mscorlib]System.Object
+  {
+    .field  private  int32 _num
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _sName
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _name
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<int32> _rId
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 36
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x301e
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method rgmsInfo::.ctor
+
+    // method line 37
+    .method public specialname 
+           instance default int32 get_num ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3026
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.rgmsInfo::_num
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method rgmsInfo::get_num
+
+    // method line 38
+    .method public specialname 
+           instance default void set_num (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3030
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.rgmsInfo::_num
+	IL_0007:  ret 
+    } // end of method rgmsInfo::set_num
+
+    // method line 39
+    .method public specialname 
+           instance default string get_sName ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3039
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.rgmsInfo::_sName
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method rgmsInfo::get_sName
+
+    // method line 40
+    .method public specialname 
+           instance default void set_sName (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3043
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.rgmsInfo::_sName
+	IL_0007:  ret 
+    } // end of method rgmsInfo::set_sName
+
+    // method line 41
+    .method public specialname 
+           instance default string get_name ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x304c
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.rgmsInfo::_name
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method rgmsInfo::get_name
+
+    // method line 42
+    .method public specialname 
+           instance default void set_name (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3056
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.rgmsInfo::_name
+	IL_0007:  ret 
+    } // end of method rgmsInfo::set_name
+
+    // method line 43
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<int32> get_rId ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x305f
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> arv_mu_computation.My.rgmsInfo::_rId
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method rgmsInfo::get_rId
+
+    // method line 44
+    .method public specialname 
+           instance default void set_rId (class [mscorlib]System.Collections.Generic.List`1<int32> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3069
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<int32> arv_mu_computation.My.rgmsInfo::_rId
+	IL_0007:  ret 
+    } // end of method rgmsInfo::set_rId
+
+	.property instance int32 num ()
+	{
+		.get instance default int32 arv_mu_computation.My.rgmsInfo::get_num () 
+		.set instance default void arv_mu_computation.My.rgmsInfo::set_num (int32 AutoPropertyValue) 
+	}
+	.property instance string sName ()
+	{
+		.get instance default string arv_mu_computation.My.rgmsInfo::get_sName () 
+		.set instance default void arv_mu_computation.My.rgmsInfo::set_sName (string AutoPropertyValue) 
+	}
+	.property instance string name ()
+	{
+		.get instance default string arv_mu_computation.My.rgmsInfo::get_name () 
+		.set instance default void arv_mu_computation.My.rgmsInfo::set_name (string AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<int32> rId ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<int32> arv_mu_computation.My.rgmsInfo::get_rId () 
+		.set instance default void arv_mu_computation.My.rgmsInfo::set_rId (class [mscorlib]System.Collections.Generic.List`1<int32> AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.rgmsInfo
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi elId
+  	extends [mscorlib]System.Object
+  {
+    .field  private  int32 _ip
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  int32 _iq
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  int32 _np
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 45
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x3072
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method elId::.ctor
+
+    // method line 46
+    .method public specialname 
+           instance default int32 get_ip ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x307a
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.elId::_ip
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method elId::get_ip
+
+    // method line 47
+    .method public specialname 
+           instance default void set_ip (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3084
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.elId::_ip
+	IL_0007:  ret 
+    } // end of method elId::set_ip
+
+    // method line 48
+    .method public specialname 
+           instance default int32 get_iq ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x308d
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.elId::_iq
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method elId::get_iq
+
+    // method line 49
+    .method public specialname 
+           instance default void set_iq (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3097
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.elId::_iq
+	IL_0007:  ret 
+    } // end of method elId::set_iq
+
+    // method line 50
+    .method public specialname 
+           instance default int32 get_np ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30a0
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.elId::_np
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method elId::get_np
+
+    // method line 51
+    .method public specialname 
+           instance default void set_np (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30aa
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.elId::_np
+	IL_0007:  ret 
+    } // end of method elId::set_np
+
+	.property instance int32 ip ()
+	{
+		.get instance default int32 arv_mu_computation.My.elId::get_ip () 
+		.set instance default void arv_mu_computation.My.elId::set_ip (int32 AutoPropertyValue) 
+	}
+	.property instance int32 iq ()
+	{
+		.get instance default int32 arv_mu_computation.My.elId::get_iq () 
+		.set instance default void arv_mu_computation.My.elId::set_iq (int32 AutoPropertyValue) 
+	}
+	.property instance int32 np ()
+	{
+		.get instance default int32 arv_mu_computation.My.elId::get_np () 
+		.set instance default void arv_mu_computation.My.elId::set_np (int32 AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.elId
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi remsInfo
+  	extends [mscorlib]System.Object
+  {
+    .field  private  int32 _id
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _name
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> _elements
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  float64 _mpdValue
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  int32 _schId
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  int32 _utId
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 52
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x30b3
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method remsInfo::.ctor
+
+    // method line 53
+    .method public specialname 
+           instance default int32 get_id ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30bb
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.remsInfo::_id
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method remsInfo::get_id
+
+    // method line 54
+    .method public specialname 
+           instance default void set_id (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30c5
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.remsInfo::_id
+	IL_0007:  ret 
+    } // end of method remsInfo::set_id
+
+    // method line 55
+    .method public specialname 
+           instance default string get_name ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30ce
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.remsInfo::_name
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method remsInfo::get_name
+
+    // method line 56
+    .method public specialname 
+           instance default void set_name (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30d8
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.remsInfo::_name
+	IL_0007:  ret 
+    } // end of method remsInfo::set_name
+
+    // method line 57
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> get_elements ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30e1
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> arv_mu_computation.My.remsInfo::_elements
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method remsInfo::get_elements
+
+    // method line 58
+    .method public specialname 
+           instance default void set_elements (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30eb
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> arv_mu_computation.My.remsInfo::_elements
+	IL_0007:  ret 
+    } // end of method remsInfo::set_elements
+
+    // method line 59
+    .method public specialname 
+           instance default float64 get_mpdValue ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30f4
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld float64 arv_mu_computation.My.remsInfo::_mpdValue
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method remsInfo::get_mpdValue
+
+    // method line 60
+    .method public specialname 
+           instance default void set_mpdValue (float64 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x30fe
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld float64 arv_mu_computation.My.remsInfo::_mpdValue
+	IL_0007:  ret 
+    } // end of method remsInfo::set_mpdValue
+
+    // method line 61
+    .method public specialname 
+           instance default int32 get_schId ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3107
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.remsInfo::_schId
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method remsInfo::get_schId
+
+    // method line 62
+    .method public specialname 
+           instance default void set_schId (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3111
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.remsInfo::_schId
+	IL_0007:  ret 
+    } // end of method remsInfo::set_schId
+
+    // method line 63
+    .method public specialname 
+           instance default int32 get_utId ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x311a
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.remsInfo::_utId
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method remsInfo::get_utId
+
+    // method line 64
+    .method public specialname 
+           instance default void set_utId (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3124
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.remsInfo::_utId
+	IL_0007:  ret 
+    } // end of method remsInfo::set_utId
+
+	.property instance int32 id ()
+	{
+		.get instance default int32 arv_mu_computation.My.remsInfo::get_id () 
+		.set instance default void arv_mu_computation.My.remsInfo::set_id (int32 AutoPropertyValue) 
+	}
+	.property instance string name ()
+	{
+		.get instance default string arv_mu_computation.My.remsInfo::get_name () 
+		.set instance default void arv_mu_computation.My.remsInfo::set_name (string AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> elements ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> arv_mu_computation.My.remsInfo::get_elements () 
+		.set instance default void arv_mu_computation.My.remsInfo::set_elements (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.elId> AutoPropertyValue) 
+	}
+	.property instance float64 mpdValue ()
+	{
+		.get instance default float64 arv_mu_computation.My.remsInfo::get_mpdValue () 
+		.set instance default void arv_mu_computation.My.remsInfo::set_mpdValue (float64 AutoPropertyValue) 
+	}
+	.property instance int32 schId ()
+	{
+		.get instance default int32 arv_mu_computation.My.remsInfo::get_schId () 
+		.set instance default void arv_mu_computation.My.remsInfo::set_schId (int32 AutoPropertyValue) 
+	}
+	.property instance int32 utId ()
+	{
+		.get instance default int32 arv_mu_computation.My.remsInfo::get_utId () 
+		.set instance default void arv_mu_computation.My.remsInfo::set_utId (int32 AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.remsInfo
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi utInfo
+  	extends [mscorlib]System.Object
+  {
+    .field  private  int32 _id
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _sName
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _name
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 65
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x312d
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method utInfo::.ctor
+
+    // method line 66
+    .method public specialname 
+           instance default int32 get_id ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3135
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.utInfo::_id
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method utInfo::get_id
+
+    // method line 67
+    .method public specialname 
+           instance default void set_id (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x313f
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.utInfo::_id
+	IL_0007:  ret 
+    } // end of method utInfo::set_id
+
+    // method line 68
+    .method public specialname 
+           instance default string get_sName ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3148
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.utInfo::_sName
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method utInfo::get_sName
+
+    // method line 69
+    .method public specialname 
+           instance default void set_sName (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3152
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.utInfo::_sName
+	IL_0007:  ret 
+    } // end of method utInfo::set_sName
+
+    // method line 70
+    .method public specialname 
+           instance default string get_name ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x315b
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.utInfo::_name
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method utInfo::get_name
+
+    // method line 71
+    .method public specialname 
+           instance default void set_name (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3165
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.utInfo::_name
+	IL_0007:  ret 
+    } // end of method utInfo::set_name
+
+	.property instance int32 id ()
+	{
+		.get instance default int32 arv_mu_computation.My.utInfo::get_id () 
+		.set instance default void arv_mu_computation.My.utInfo::set_id (int32 AutoPropertyValue) 
+	}
+	.property instance string sName ()
+	{
+		.get instance default string arv_mu_computation.My.utInfo::get_sName () 
+		.set instance default void arv_mu_computation.My.utInfo::set_sName (string AutoPropertyValue) 
+	}
+	.property instance string name ()
+	{
+		.get instance default string arv_mu_computation.My.utInfo::get_name () 
+		.set instance default void arv_mu_computation.My.utInfo::set_name (string AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.utInfo
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi pssInfo
+  	extends [mscorlib]System.Object
+  {
+    .field  private  string _table
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _param
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  int32 _id
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  float64 _val
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 72
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x316e
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method pssInfo::.ctor
+
+    // method line 73
+    .method public specialname 
+           instance default string get_table ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3176
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.pssInfo::_table
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method pssInfo::get_table
+
+    // method line 74
+    .method public specialname 
+           instance default void set_table (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3180
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.pssInfo::_table
+	IL_0007:  ret 
+    } // end of method pssInfo::set_table
+
+    // method line 75
+    .method public specialname 
+           instance default string get_param ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3189
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.pssInfo::_param
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method pssInfo::get_param
+
+    // method line 76
+    .method public specialname 
+           instance default void set_param (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3193
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.pssInfo::_param
+	IL_0007:  ret 
+    } // end of method pssInfo::set_param
+
+    // method line 77
+    .method public specialname 
+           instance default int32 get_id ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x319c
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld int32 arv_mu_computation.My.pssInfo::_id
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method pssInfo::get_id
+
+    // method line 78
+    .method public specialname 
+           instance default void set_id (int32 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31a6
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld int32 arv_mu_computation.My.pssInfo::_id
+	IL_0007:  ret 
+    } // end of method pssInfo::set_id
+
+    // method line 79
+    .method public specialname 
+           instance default float64 get_val ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31af
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld float64 arv_mu_computation.My.pssInfo::_val
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method pssInfo::get_val
+
+    // method line 80
+    .method public specialname 
+           instance default void set_val (float64 AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31b9
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld float64 arv_mu_computation.My.pssInfo::_val
+	IL_0007:  ret 
+    } // end of method pssInfo::set_val
+
+	.property instance string table ()
+	{
+		.get instance default string arv_mu_computation.My.pssInfo::get_table () 
+		.set instance default void arv_mu_computation.My.pssInfo::set_table (string AutoPropertyValue) 
+	}
+	.property instance string param ()
+	{
+		.get instance default string arv_mu_computation.My.pssInfo::get_param () 
+		.set instance default void arv_mu_computation.My.pssInfo::set_param (string AutoPropertyValue) 
+	}
+	.property instance int32 id ()
+	{
+		.get instance default int32 arv_mu_computation.My.pssInfo::get_id () 
+		.set instance default void arv_mu_computation.My.pssInfo::set_id (int32 AutoPropertyValue) 
+	}
+	.property instance float64 val ()
+	{
+		.get instance default float64 arv_mu_computation.My.pssInfo::get_val () 
+		.set instance default void arv_mu_computation.My.pssInfo::set_val (float64 AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.pssInfo
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi grfInfo
+  	extends [mscorlib]System.Object
+  {
+    .field  private  string _table
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _param
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<int32> _id
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  string _name
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 81
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x31c2
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method grfInfo::.ctor
+
+    // method line 82
+    .method public specialname 
+           instance default string get_table ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31ca
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.grfInfo::_table
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfInfo::get_table
+
+    // method line 83
+    .method public specialname 
+           instance default void set_table (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31d4
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.grfInfo::_table
+	IL_0007:  ret 
+    } // end of method grfInfo::set_table
+
+    // method line 84
+    .method public specialname 
+           instance default string get_param ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31dd
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.grfInfo::_param
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfInfo::get_param
+
+    // method line 85
+    .method public specialname 
+           instance default void set_param (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31e7
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.grfInfo::_param
+	IL_0007:  ret 
+    } // end of method grfInfo::set_param
+
+    // method line 86
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<int32> get_id ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31f0
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> arv_mu_computation.My.grfInfo::_id
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfInfo::get_id
+
+    // method line 87
+    .method public specialname 
+           instance default void set_id (class [mscorlib]System.Collections.Generic.List`1<int32> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x31fa
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<int32> arv_mu_computation.My.grfInfo::_id
+	IL_0007:  ret 
+    } // end of method grfInfo::set_id
+
+    // method line 88
+    .method public specialname 
+           instance default string get_name ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3203
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.grfInfo::_name
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method grfInfo::get_name
+
+    // method line 89
+    .method public specialname 
+           instance default void set_name (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x320d
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.grfInfo::_name
+	IL_0007:  ret 
+    } // end of method grfInfo::set_name
+
+	.property instance string table ()
+	{
+		.get instance default string arv_mu_computation.My.grfInfo::get_table () 
+		.set instance default void arv_mu_computation.My.grfInfo::set_table (string AutoPropertyValue) 
+	}
+	.property instance string param ()
+	{
+		.get instance default string arv_mu_computation.My.grfInfo::get_param () 
+		.set instance default void arv_mu_computation.My.grfInfo::set_param (string AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<int32> id ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<int32> arv_mu_computation.My.grfInfo::get_id () 
+		.set instance default void arv_mu_computation.My.grfInfo::set_id (class [mscorlib]System.Collections.Generic.List`1<int32> AutoPropertyValue) 
+	}
+	.property instance string name ()
+	{
+		.get instance default string arv_mu_computation.My.grfInfo::get_name () 
+		.set instance default void arv_mu_computation.My.grfInfo::set_name (string AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.grfInfo
+}
+
+.namespace arv_mu_computation.My
+{
+  .class public auto ansi comInfo
+  	extends [mscorlib]System.Object
+  {
+    .field  private  string _name
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> _rgms
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> _rems
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> _ut
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> _arv
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+    .field  private  class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> _grf
+    .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+    .custom instance void class [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::'.ctor'(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) =  (01 00 00 00 00 00 00 00 ) // ........
+
+
+    // method line 90
+    .method public specialname rtspecialname 
+           instance default void '.ctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x3216
+	// Code size 7 (0x7)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  call instance void object::'.ctor'()
+	IL_0006:  ret 
+    } // end of method comInfo::.ctor
+
+    // method line 91
+    .method public specialname 
+           instance default string get_name ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x321e
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld string arv_mu_computation.My.comInfo::_name
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method comInfo::get_name
+
+    // method line 92
+    .method public specialname 
+           instance default void set_name (string AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3228
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld string arv_mu_computation.My.comInfo::_name
+	IL_0007:  ret 
+    } // end of method comInfo::set_name
+
+    // method line 93
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> get_rgms ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3231
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> arv_mu_computation.My.comInfo::_rgms
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method comInfo::get_rgms
+
+    // method line 94
+    .method public specialname 
+           instance default void set_rgms (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x323b
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> arv_mu_computation.My.comInfo::_rgms
+	IL_0007:  ret 
+    } // end of method comInfo::set_rgms
+
+    // method line 95
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> get_rems ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3244
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> arv_mu_computation.My.comInfo::_rems
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method comInfo::get_rems
+
+    // method line 96
+    .method public specialname 
+           instance default void set_rems (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x324e
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> arv_mu_computation.My.comInfo::_rems
+	IL_0007:  ret 
+    } // end of method comInfo::set_rems
+
+    // method line 97
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> get_ut ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3257
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> arv_mu_computation.My.comInfo::_ut
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method comInfo::get_ut
+
+    // method line 98
+    .method public specialname 
+           instance default void set_ut (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3261
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> arv_mu_computation.My.comInfo::_ut
+	IL_0007:  ret 
+    } // end of method comInfo::set_ut
+
+    // method line 99
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> get_arv ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x326a
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> arv_mu_computation.My.comInfo::_arv
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method comInfo::get_arv
+
+    // method line 100
+    .method public specialname 
+           instance default void set_arv (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3274
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> arv_mu_computation.My.comInfo::_arv
+	IL_0007:  ret 
+    } // end of method comInfo::set_arv
+
+    // method line 101
+    .method public specialname 
+           instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> get_grf ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x327d
+	// Code size 9 (0x9)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> arv_mu_computation.My.comInfo::_grf
+	IL_0006:  br.s IL_0008
+
+	IL_0008:  ret 
+    } // end of method comInfo::get_grf
+
+    // method line 102
+    .method public specialname 
+           instance default void set_grf (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> AutoPropertyValue)  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x3287
+	// Code size 8 (0x8)
+	.maxstack 8
+	IL_0000:  ldarg.0 
+	IL_0001:  ldarg.1 
+	IL_0002:  stfld class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> arv_mu_computation.My.comInfo::_grf
+	IL_0007:  ret 
+    } // end of method comInfo::set_grf
+
+	.property instance string name ()
+	{
+		.get instance default string arv_mu_computation.My.comInfo::get_name () 
+		.set instance default void arv_mu_computation.My.comInfo::set_name (string AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> rgms ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> arv_mu_computation.My.comInfo::get_rgms () 
+		.set instance default void arv_mu_computation.My.comInfo::set_rgms (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.rgmsInfo> AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> rems ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> arv_mu_computation.My.comInfo::get_rems () 
+		.set instance default void arv_mu_computation.My.comInfo::set_rems (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.remsInfo> AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> ut ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> arv_mu_computation.My.comInfo::get_ut () 
+		.set instance default void arv_mu_computation.My.comInfo::set_ut (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.utInfo> AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> arv ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> arv_mu_computation.My.comInfo::get_arv () 
+		.set instance default void arv_mu_computation.My.comInfo::set_arv (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.pssInfo> AutoPropertyValue) 
+	}
+	.property instance class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> grf ()
+	{
+		.get instance default class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> arv_mu_computation.My.comInfo::get_grf () 
+		.set instance default void arv_mu_computation.My.comInfo::set_grf (class [mscorlib]System.Collections.Generic.List`1<class arv_mu_computation.My.grfInfo> AutoPropertyValue) 
+	}
+  } // end of class arv_mu_computation.My.comInfo
+}
+
+.namespace arv_mu_computation.My
+{
+  .class private auto ansi sealed beforefieldinit MyWpfExtension
+  	extends [mscorlib]System.Object
+  {
+    .custom instance void [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute::.ctor() =  (01 00 00 00 ) // ....
+
+    .custom instance void [Microsoft.VisualBasic]Microsoft.VisualBasic.HideModuleNameAttribute::.ctor() =  (01 00 00 00 ) // ....
+
+    .field  private static  class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000026 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>> s_Computer
+    .field  private static  class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000027 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>> s_User
+    .field  private static  class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<class arv_mu_computation.My.MyWpfExtension/MyWindows> s_Windows
+    .field  private static  class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000028 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>> s_Log
+
+    // method line 103
+    .method private static specialname rtspecialname 
+           default void '.cctor' ()  cil managed 
+    {
+        // Method begins at RVA 0x3290
+	// Code size 41 (0x29)
+	.maxstack 8
+	IL_0000:  newobj instance void class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000026 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>>::.ctor()
+	IL_0005:  stsfld class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000026 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>> arv_mu_computation.My.MyWpfExtension::s_Computer
+	IL_000a:  newobj instance void class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000027 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>>::.ctor()
+	IL_000f:  stsfld class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000027 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>> arv_mu_computation.My.MyWpfExtension::s_User
+	IL_0014:  newobj instance void class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<class arv_mu_computation.My.MyWpfExtension/MyWindows>::'.ctor'()
+	IL_0019:  stsfld class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<class arv_mu_computation.My.MyWpfExtension/MyWindows> arv_mu_computation.My.MyWpfExtension::s_Windows
+	IL_001e:  newobj instance void class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000028 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>>::.ctor()
+	IL_0023:  stsfld class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<<BROKEN CLASS token_ 1000028 due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.>> arv_mu_computation.My.MyWpfExtension::s_Log
+	IL_0028:  ret 
+    } // end of method MyWpfExtension::.cctor
+
+    // method line 104
+    .method assembly static specialname 
+           (null) cil managed 
+    {
+        // Method begins at RVA 0x32bc
+	// Code size 16 (0x10)
+	.maxstack 1
+	.locals init (
+		class arv_mu_computation.Application	V_0)
+	IL_0000:  nop 
+	IL_0001:  call <BROKEN CLASS token_ 1000031 due to Could not load file or assembly 'PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.> [PresentationFramework]System.Windows.Application::get_Current()
+	IL_0006:  castclass arv_mu_computation.Application
+	IL_000b:  stloc.0 
+	IL_000c:  br.s IL_000e
+
+	IL_000e:  ldloc.0 
+	IL_000f:  ret 
+    } // end of method MyWpfExtension::<NULL METHOD SIGNATURE>
+
+    // method line 105
+    .method assembly static specialname 
+           (null) cil managed 
+    {
+        // Method begins at RVA 0x32d8
+    } // end of method MyWpfExtension::<NULL METHOD SIGNATURE>
+
+    // method line 106
+    .method assembly static specialname 
+           (null) cil managed 
+    {
+        // Method begins at RVA 0x32f4
+    } // end of method MyWpfExtension::<NULL METHOD SIGNATURE>
+
+    // method line 107
+    .method assembly static specialname 
+           (null) cil managed 
+    {
+        // Method begins at RVA 0x3310
+    } // end of method MyWpfExtension::<NULL METHOD SIGNATURE>
+
+    // method line 108
+    .method assembly static specialname 
+           default class arv_mu_computation.My.MyWpfExtension/MyWindows get_Windows ()  cil managed 
+    {
+        .custom instance void class [mscorlib]System.Diagnostics.DebuggerHiddenAttribute::'.ctor'() =  (01 00 00 00 ) // ....
+
+        // Method begins at RVA 0x332c
+	// Code size 16 (0x10)
+	.maxstack 1
+	.locals init (
+		class arv_mu_computation.My.MyWpfExtension/MyWindows	V_0)
+	IL_0000:  nop 
+	IL_0001:  ldsfld class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<class arv_mu_computation.My.MyWpfExtension/MyWindows> arv_mu_computation.My.MyWpfExtension::s_Windows
+	IL_0006:  callvirt instance !0 class arv_mu_computation.My.MyProject/ThreadSafeObjectProvider`1<class arv_mu_computation.My.MyWpfExtension/MyWindows>::get_GetInstance()
+	IL_000b:  stloc.0 
+	IL_000c:  br.s IL_000e
+
+	IL_000e:  ldloc.0 
+	IL_000f:  ret 
+    } // end of method MyWpfExtension::get_Windows
+
+	.property class arv_mu_computation.Application Application ()
+	{
+		.get default class arv_mu_computation.Application arv_mu_computation.My.MyWpfExtension::get_Application () 
+	}
+	.property Invalid type due to Could not load file or assembly 'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. Computer ()
+	{
+* Assertion at get.c:913, condition `is_ok (error)' not met
+

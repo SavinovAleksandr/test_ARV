@@ -1,0 +1,26 @@
+# Build
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+.vs/
+*.cache
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# IDE
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: не коммитить тяжёлые/временные артефакты
+# Decompiled/Module_IL_dump.txt
