@@ -61,10 +61,17 @@ def col_get_z(col, row: int) -> Any:
     """
     getter = getattr(col, "get_Z", None)
     if callable(getter):
-        return getter(row)
+        try:
+            return getter(row)
+        except Exception:
+            # если COM-обёртка не поддерживает get_Z, пробуем другие варианты
+            pass
     z = getattr(col, "Z", None)
     if callable(z):
-        return z(row)
+        try:
+            return z(row)
+        except Exception:
+            pass
     # Последняя попытка — индексатор или Item
     item = getattr(col, "Item", None)
     if callable(item):
@@ -79,15 +86,24 @@ def col_set_z(col, row: int, value: Any):
     """
     Установить значение элемента колонки (аналог ICol.set_Z).
     """
-    setter = getattr(col, "set_Z", None)
-    if callable(setter):
-        setter(row, value)
-        return
+    # Попробуем несколько возможных имён сеттера
+    for name in ("set_Z", "Set_Z", "SetZ"):
+        setter = getattr(col, name, None)
+        if callable(setter):
+            try:
+                setter(row, value)
+                return
+            except Exception:
+                pass
     z = getattr(col, "Z", None)
     if callable(z):
-        # Многие COM-свойства реализуют set как Z(row, value)
-        z(row, value)
-        return
+        # В некоторых обёртках установка значения реализуется как Z(Row=row, Value=value)
+        try:
+            z(Row=row, Value=value)  # type: ignore[call-arg]
+            return
+        except TypeError:
+            # Если сигнатура другая, не ломаемся, идём дальше
+            pass
     item = getattr(col, "Item", None)
     if callable(item):
         item(row, value)
