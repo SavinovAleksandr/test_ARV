@@ -26,9 +26,9 @@ class MainWindow:
         self.var_rst_save = tk.BooleanVar(value=False)
         self.var_csv_save = tk.BooleanVar(value=False)
 
-        self._build_ui()
         self._progress_max = 0
         self._progress_value = tk.DoubleVar(value=0.0)
+        self._build_ui()
 
     def _build_ui(self):
         f = ttk.Frame(self.root, padding=8)
