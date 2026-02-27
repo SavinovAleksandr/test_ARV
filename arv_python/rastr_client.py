@@ -54,11 +54,45 @@ def get_col(table, name: str):
 
 
 def col_get_z(col, row: int) -> Any:
-    return col.get_Z(row)
+    """
+    Получить значение элемента колонки.
+    В .NET-обёртке вызывается ICol.get_Z(row), в COM обычно это свойство/метод Z(row).
+    Делаем вызов устойчивым к разным вариантам обёртки.
+    """
+    getter = getattr(col, "get_Z", None)
+    if callable(getter):
+        return getter(row)
+    z = getattr(col, "Z", None)
+    if callable(z):
+        return z(row)
+    # Последняя попытка — индексатор или Item
+    item = getattr(col, "Item", None)
+    if callable(item):
+        return item(row)
+    try:
+        return col[row]  # type: ignore[index]
+    except Exception as e:  # pragma: no cover - защитный путь
+        raise AttributeError("Колонка не поддерживает get_Z/Z/Item для чтения") from e
 
 
 def col_set_z(col, row: int, value: Any):
-    col.set_Z(row, value)
+    """
+    Установить значение элемента колонки (аналог ICol.set_Z).
+    """
+    setter = getattr(col, "set_Z", None)
+    if callable(setter):
+        setter(row, value)
+        return
+    z = getattr(col, "Z", None)
+    if callable(z):
+        # Многие COM-свойства реализуют set как Z(row, value)
+        z(row, value)
+        return
+    item = getattr(col, "Item", None)
+    if callable(item):
+        item(row, value)
+        return
+    raise AttributeError("Колонка не поддерживает set_Z/Z/Item для записи")
 
 
 def col_calc(col, value: str):
