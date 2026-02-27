@@ -57,10 +57,20 @@ def parse_rgms(ws: Worksheet, regims: List[str]) -> List[RgmsInfo]:
             r_id = [0]
         name = _str(_cell(ws, row, 2))
         s_name = None
+        # Сначала строгий поиск по имени без расширения (как в C#),
+        # затем более мягкий (учёт регистра и возможных суффиксов вроде "_кор").
         for path in regims:
             if Path(path).stem == name:
                 s_name = path
                 break
+        if s_name is None:
+            name_l = name.lower()
+            for path in regims:
+                stem = Path(path).stem
+                stem_l = stem.lower()
+                if stem_l == name_l or stem_l.startswith(name_l) or name_l.startswith(stem_l):
+                    s_name = path
+                    break
         result.append(RgmsInfo(
             num=_int(_cell(ws, row, 1)),
             name=name,
@@ -116,6 +126,14 @@ def parse_ut(ws: Worksheet, ut2_files: List[str]) -> List[UtInfo]:
             if Path(path).stem == name:
                 s_name = path
                 break
+        if s_name is None:
+            name_l = name.lower()
+            for path in ut2_files:
+                stem = Path(path).stem
+                stem_l = stem.lower()
+                if stem_l == name_l or stem_l.startswith(name_l) or name_l.startswith(stem_l):
+                    s_name = path
+                    break
         result.append(UtInfo(
             id=_int(_cell(ws, row, 1)),
             name=name,
