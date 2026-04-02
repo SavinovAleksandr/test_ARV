@@ -101,7 +101,10 @@ def dyn_calc(rastr, com_info: ComInfo, scns_path: str) -> List[GrfData]:
             try:
                 if g.table == "vetv" and float(col_get_z(col_param, idx)) < 0:
                     sign = -1
-                if col_get_z(col_sta, idx) in (False, 0, "0"):
+                sta_val = col_get_z(col_sta, idx)
+                # В исходном C# обрабатываются только строки, где sta == false.
+                # Поэтому пропускаем все "включенные" элементы.
+                if sta_val not in (False, 0, "0", "False", "false", None):
                     continue
             except Exception:
                 continue
@@ -135,7 +138,8 @@ def dyn_calc(rastr, com_info: ComInfo, scns_path: str) -> List[GrfData]:
             try:
                 if g.table == "vetv" and float(col_get_z(col_param, idx)) < 0:
                     sign = -1
-                if col_get_z(col_sta, idx) in (False, 0, "0"):
+                sta_val = col_get_z(col_sta, idx)
+                if sta_val not in (False, 0, "0", "False", "false", None):
                     continue
             except Exception:
                 continue
